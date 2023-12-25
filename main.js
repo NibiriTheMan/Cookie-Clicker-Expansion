@@ -7668,7 +7668,7 @@ Game.Launch=function()
 		Game.last=0;
 		
 		Game.storeToRefresh=1;
-		Game.priceIncrease=1.15;
+		Game.priceIncrease=1.3;
 		Game.buyBulk=1;
 		Game.buyMode=1;//1 for buy, -1 for sell
 		Game.buyBulkOld=Game.buyBulk;//used to undo changes from holding Shift or Ctrl
