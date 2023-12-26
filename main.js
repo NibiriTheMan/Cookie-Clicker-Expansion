@@ -8740,7 +8740,7 @@ Game.Launch=function()
 			if (Game.season=='christmas') list.push('elfGrandma');
 			if (Game.season=='easter') list.push('bunnyGrandma');
 			return choose(list)+'.png';
-		},bg:'grandmaBackground.png',xV:8,yV:8,w:32,rows:3,x:0,y:16},200,function(me){
+		},bg:'grandmaBackground.png',xV:8,yV:8,w:32,rows:3,x:0,y:16},800,function(me){
 			var mult=1;
 			for (var i in Game.GrandmaSynergies)
 			{
