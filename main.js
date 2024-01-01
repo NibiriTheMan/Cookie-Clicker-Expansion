@@ -7026,11 +7026,10 @@ Game.Launch=function()
 						}
 					}
 					else
-					{
-						if (Game.Objects['Cursor'].amount>1000) list.push(choose([
-						'News : deranged cookie manufacturer '+Game.bakeryName+' found to keep a collection of over 1000 human hands!',
+					{	
+						if (Game.HaveAchiev('A round of applause').amount>1000) list.push(choose([
+						'News : deranged cookie manufacturer '+Game.bakeryName+' found to keep a collection of at least 1000 human hands!',
 						]));
-						
 						if (Game.Objects['Farm'].amount>0) list.push(choose([
 						'News : cookie farms suspected of employing undeclared elderly workforce!',
 						'News : cookie farms release harmful chocolate in our rivers, says scientist!',
