@@ -7028,7 +7028,7 @@ Game.Launch=function()
 					else
 					{
 						if (Game.Objects['Cursor'].amount>1000) list.push(choose([
-						'News : deranged cookie manufacturer found to keep a collection of over 1000 hands!',
+						'News : deranged cookie manufacturer '+Game.bakeryName+' found to keep a collection of over 1000 human hands!',
 						]));
 						
 						if (Game.Objects['Farm'].amount>0) list.push(choose([
