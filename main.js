@@ -7226,7 +7226,7 @@ Game.Launch=function()
 				{
 					if (Math.random()<0.05)
 					{
-						if (Game.HasAchiev('A round of applause') list.push(choose(['News : deranged cookie manufacturer '+Game.bakeryName+' found to keep a collection of at least 1000 human hands!',]));
+						if (Game.HasAchiev('A round of applause') list.push('News : deranged cookie manufacturer '+Game.bakeryName+' found to keep a collection of at least 1000 human hands!');
 						if (Game.HasAchiev('Base 10')) list.push('News : cookie manufacturer completely forgoes common sense, lets strange obsession with round numbers drive building decisions!');
 						if (Game.HasAchiev('From scratch')) list.push('News : follow the tear-jerking, riches-to-rags story about a local cookie manufacturer who decided to give it all up!');
 						if (Game.HasAchiev('A world filled with cookies')) list.push('News : known universe now jammed with cookies! No vacancies!');
@@ -8872,7 +8872,7 @@ Game.Launch=function()
 		Game.last.minigameUrl='minigameGrimoire.js';
 		Game.last.minigameName=loc("Grimoire");
 		
-		new Game.Object('Shipment','shipment|shipments|shipped|[X] galaxy fully explored|[X] galaxies fully explored','Brings in fresh cookies from the cookie planet.',9,5,{base:'shipment',xV:16,yV:16,w:64,rows:1,x:0,y:0},40000,function(me){
+		new Game.Object('Citadel','citadel|citadels|coagulated|[X] galaxy fully explored|[X] galaxies fully explored','Harvests the air to be extracted and turned into cookies.',9,5,{base:'shipment',xV:16,yV:16,w:64,rows:1,x:0,y:0},20000,function(me){
 			var mult=1;
 			mult*=Game.GetTieredCpsMult(me);
 			mult*=Game.magicCpS(me.name);
