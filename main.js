@@ -7226,7 +7226,7 @@ Game.Launch=function()
 				{
 					if (Math.random()<0.05)
 					{
-						if (Game.HasAchiev('A round of applause') list.push('News : deranged cookie manufacturer '+Game.bakeryName+' found to keep a collection of at least 1000 human hands!');
+						if (Game.HasAchiev('A round of applause')) list.push('News : deranged cookie manufacturer '+Game.bakeryName+' found to keep a collection of at least 1000 human hands!');
 						if (Game.HasAchiev('Base 10')) list.push('News : cookie manufacturer completely forgoes common sense, lets strange obsession with round numbers drive building decisions!');
 						if (Game.HasAchiev('From scratch')) list.push('News : follow the tear-jerking, riches-to-rags story about a local cookie manufacturer who decided to give it all up!');
 						if (Game.HasAchiev('A world filled with cookies')) list.push('News : known universe now jammed with cookies! No vacancies!');
