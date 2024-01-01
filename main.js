@@ -7027,13 +7027,17 @@ Game.Launch=function()
 					}
 					else
 					{
+						if (Game.Objects['Cursor'].amount>1000) list.push(choose([
+						'News : deranged baker found to keep a collection of over 1000 hands!',
+						]));
+						
 						if (Game.Objects['Farm'].amount>0) list.push(choose([
 						'News : cookie farms suspected of employing undeclared elderly workforce!',
 						'News : cookie farms release harmful chocolate in our rivers, says scientist!',
 						'News : genetically-modified chocolate controversy strikes cookie farmers!',
 						'News : free-range farm cookies popular with today\'s hip youth, says specialist.',
 						'News : farm cookies deemed unfit for vegans, says nutritionist.',
-						'News : cookie farm shut down for farming useless non-chocolate crops. Authorities still unsure who is behind this.'
+						'News : cookie farm closed down for secretly farming useless nonchocolate crops! Authorities are still unsure on who is behind this.'
 						]));
 						
 						if (Game.Objects['Mine'].amount>0) list.push(choose([
