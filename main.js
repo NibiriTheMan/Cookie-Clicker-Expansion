@@ -7032,7 +7032,8 @@ Game.Launch=function()
 						'News : cookie farms release harmful chocolate in our rivers, says scientist!',
 						'News : genetically-modified chocolate controversy strikes cookie farmers!',
 						'News : free-range farm cookies popular with today\'s hip youth, says specialist.',
-						'News : farm cookies deemed unfit for vegans, says nutritionist.'
+						'News : farm cookies deemed unfit for vegans, says nutritionist.',
+						'News : cookie farm shut down for farming useless non-chocolate crops. Authorities still unsure who is behind this.'
 						]));
 						
 						if (Game.Objects['Mine'].amount>0) list.push(choose([
@@ -7080,7 +7081,8 @@ Game.Launch=function()
 						'News : massive chocolate planet found with 99.8% certified pure dark chocolate core!',
 						'News : space tourism booming as distant planets attract more bored millionaires!',
 						'News : chocolate-based organisms found on distant planet!',
-						'News : ancient baking artifacts found on distant planet; "terrifying implications", experts say.'
+						'News : ancient baking artifacts found on distant planet; "terrifying implications", experts say.',
+						'News : news writer finds herself lost in space. Help!'
 						]));
 						
 						if (Game.Objects['Alchemy lab'].amount>0) list.push(choose([
