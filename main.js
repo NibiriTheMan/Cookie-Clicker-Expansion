@@ -8716,6 +8716,7 @@ Game.Launch=function()
 			if (this.amount>=450) Game.Unlock('Nonillion fingers');
 			if (this.amount>=500) Game.Unlock('Decillion fingers');
 			if (this.amount>=550) Game.Unlock('Undecillion fingers');
+			if (this.amount>=700) Game.Unlock('Duodecillion fingers');
 			
 			if (this.amount>=1) Game.Win('Click');if (this.amount>=2) Game.Win('Double-click');if (this.amount>=50) Game.Win('Mouse wheel');if (this.amount>=100) Game.Win('Of Mice and Men');if (this.amount>=200) Game.Win('The Digital');if (this.amount>=300) Game.Win('Extreme polydactyly');if (this.amount>=400) Game.Win('Dr. T');if (this.amount>=500) Game.Win('Thumbs, phalanges, metacarpals');if (this.amount>=600) Game.Win('With her finger and her thumb');if (this.amount>=700) Game.Win('Gotta hand it to you');if (this.amount>=800) Game.Win('The devil\'s workshop');if (this.amount>=900) Game.Win('All on deck');if (this.amount>=1000) Game.Win('A round of applause');
 		});
