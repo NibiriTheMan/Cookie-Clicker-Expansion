@@ -9833,7 +9833,7 @@ Game.Launch=function()
 			13:{name:'Iridyum',unlock:500,achievUnlock:600,iconRow:31,color:'#adb1b3',price:			500000000000000000000000000000000},
 			14:{name:'Glucosmium',unlock:550,achievUnlock:650,iconRow:34,color:'#ff89e7',price:			5000000000000000000000000000000000000},
 			15:{name:'Glimmeringue',unlock:600,achievUnlock:700,iconRow:36,color:'#fffaa8',price:		50000000000000000000000000000000000000000},
-			16:{name:'Kalathunzite',unlock:700,achievUnlock:700,iconRow:36,color:'#ffa18a',price:		50000000000000000000000000000000000000000000},
+			16:{name:'Kalathunzite',unlock:700,achievUnlock:700,iconRow:37,color:'#ffa18a',price:		50000000000000000000000000000000000000000000},
 			'synergy1':{name:'Synergy I',unlock:15,iconRow:20,color:'#008595',special:1,req:'Synergies Vol. I',price:			200000},
 			'synergy2':{name:'Synergy II',unlock:75,iconRow:29,color:'#008595',special:1,req:'Synergies Vol. II',price:			200000000000},
 			'fortune':{name:'Fortune',unlock:-1,iconRow:32,color:'#9ab834',special:1,price:				77777777777777777777777777777},
@@ -12369,13 +12369,9 @@ Game.Launch=function()
 		
 		order=100;new Game.Upgrade('Undecillion fingers',getStrThousandFingersGain(20)+'<q>Whatever you touch<br>turns to dough in your clutch.</q>',10000000000000000000000000000000,[12,36]);Game.MakeTiered(Game.last,15,0);
 		order=150;new Game.Upgrade('Omniplast mouse',getStrClickingGains(1)+'<q>This mouse is, by virtue of the strange elements that make it up, present in every position in space simultaneously, in a manner; this alleviates its owner from the need to move it around, redirecting all such kinetic power to the intensity of its clicks.</q>',500000000000000000000000000000000,[11,36]);Game.MakeTiered(Game.last,15,11);
-		order=100;new Game.Upgrade('Duodecillion fingers',getStrThousandFingersGain(20)+'<q>Congratulations.<br>You\'ve mastered the core mechanic of the game.</q>',10000000000000000000000000000000000,[0,37]);Game.MakeTiered(Game.last,16,0);
+		order=100;new Game.Upgrade('Duodecillion fingers',getStrThousandFingersGain(20)+'<q>Congratulations.<br>You\'ve mastered the core mechanic of the game.</q>',10000000000000000000000000000000000,[12,37]);Game.MakeTiered(Game.last,16,0);
 
 		//end of upgrades
-		
-		
-		
-		
 		
 		Game.seasons={
 			'christmas':{name:'Christmas',start:'Christmas season has started!',over:'Christmas season is over.',trigger:'Festive biscuit'},
