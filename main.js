@@ -8872,7 +8872,7 @@ Game.Launch=function()
 		Game.last.minigameUrl='minigameGrimoire.js';
 		Game.last.minigameName=loc("Grimoire");
 		
-		new Game.Object('Citadel','citadel|citadels|coagulated|[X] galaxy fully explored|[X] galaxies fully explored','Harvests the air to be extracted and turned into cookies.',9,5,{base:'shipment',xV:16,yV:16,w:64,rows:1,x:0,y:0},20000,function(me){
+		new Game.Object('Citadel','citadel|citadels|coagulated|[X] galaxy fully explored|[X] galaxies fully explored','Harvests the air to be extracted and turned into cookies.',9,5,{base:'citadel',xV:16,yV:16,w:64,rows:1,x:0,y:0},20000,function(me){
 			var mult=1;
 			mult*=Game.GetTieredCpsMult(me);
 			mult*=Game.magicCpS(me.name);
