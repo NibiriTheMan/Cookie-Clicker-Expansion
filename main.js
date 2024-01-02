@@ -8872,7 +8872,7 @@ Game.Launch=function()
 		Game.last.minigameUrl='minigameGrimoire.js';
 		Game.last.minigameName=loc("Grimoire");
 		
-		new Game.Object('Citadel','citadel|citadels|coagulated|[X] sky charted|[X] skies charted','Harvests the air to be extracted and turned into cookies.',9,5,{base:'citadel',xV:16,yV:16,w:64,rows:1,x:0,y:0},20000,function(me){
+		new Game.Object('Sky citadel','sky citadel|sky citadels|coagulated|[X] sky charted|[X] skies charted','Harvests the air to be extracted and turned into cookies.',9,5,{base:'citadel',xV:16,yV:16,w:64,rows:1,x:0,y:0},10000,function(me){
 			var mult=1;
 			mult*=Game.GetTieredCpsMult(me);
 			mult*=Game.magicCpS(me.name);
@@ -8880,7 +8880,8 @@ Game.Launch=function()
 		},function(){
 			Game.UnlockTiered(this);
 			if (this.amount>=Game.SpecialGrandmaUnlock && Game.Objects['Grandma'].amount>0) Game.Unlock(this.grandma.name);
-		});		
+		});
+		Game.last.displayName='<span style="font-size:90%;letter-spacing:-1px;position:relative;bottom:2px;">Sky citadel</span>';//shrink
 		
 		new Game.Object('Shipment','shipment|shipments|shipped|[X] galaxy fully explored|[X] galaxies fully explored','Brings in fresh cookies from the cookie planet.',9,5,{base:'shipment',xV:16,yV:16,w:64,rows:1,x:0,y:0},40000,function(me){
 			var mult=1;
