@@ -12370,7 +12370,7 @@ Game.Launch=function()
 		order=100;new Game.Upgrade('Undecillion fingers',getStrThousandFingersGain(20)+'<q>Whatever you touch<br>turns to dough in your clutch.</q>',10000000000000000000000000000000,[12,36]);Game.MakeTiered(Game.last,15,0);
 		order=150;new Game.Upgrade('Omniplast mouse',getStrClickingGains(1)+'<q>This mouse is, by virtue of the strange elements that make it up, present in every position in space simultaneously, in a manner; this alleviates its owner from the need to move it around, redirecting all such kinetic power to the intensity of its clicks.</q>',500000000000000000000000000000000,[11,36]);Game.MakeTiered(Game.last,15,11);
 		order=100;new Game.Upgrade('Duodecillion fingers',getStrThousandFingersGain(20)+'<q>Congratulations.<br>You\'ve mastered the core mechanic of the game.</q>',10000000000000000000000000000000000,[12,37]);Game.MakeTiered(Game.last,16,0);
-		order=300;Game.TieredUpgrade('Hyper-ionized soil','<q>Side effects may include:<br><br>Death.</q>','Farm',16);
+		order=300;Game.TieredUpgrade('Hyper-ionized soil','<q>Side effects as a result of consumption of the resulting crops may include:<br><br>Death.</q>','Farm',16);
 
 		//end of upgrades
 		
