@@ -8692,6 +8692,7 @@ Game.Launch=function()
 			if (Game.Has('Nonillion fingers')) add*=	20;
 			if (Game.Has('Decillion fingers')) add*=	20;
 			if (Game.Has('Undecillion fingers')) add*=	20;
+			if (Game.Has('Duodecillion fingers')) add*=	20;
 			if (Game.Has('Unshackled cursors')) add*=	25;
 			var mult=1;
 			var num=0;
