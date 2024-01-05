@@ -8889,7 +8889,7 @@ Game.Launch=function()
 		Game.last.minigameUrl='minigameGrimoire.js';
 		Game.last.minigameName=loc("Grimoire");
 		
-		new Game.Object('Sky citadel','sky citadel|sky citadels|coagulated|The sky is [X]% cloudier|The sky is [X]% cloudier','Harvests the air to be extracted and turned into cookies.',6,36,{base:'wizardtower',xV:16,yV:16,w:48,rows:2,x:0,y:20},10000,function(me){
+		new Game.Object('Sky citadel','sky citadel|sky citadels|coagulated|The sky is [X]% cloudier|The sky is [X]% cloudier','Harvests the air to be extracted and turned into cookies.',6,36,{base:'skycitadel',xV:16,yV:16,w:48,rows:2,x:0,y:20},10000,function(me){
 			var mult=1;
 			mult*=Game.GetTieredCpsMult(me);
 			mult*=Game.magicCpS(me.name);
