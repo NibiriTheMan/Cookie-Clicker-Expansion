@@ -10,6 +10,13 @@ Spoilers ahead.
 http://orteil.dashnet.org
 */
 
+/*
+...With some modifications by Nibiri
+Note from mod creator: do not cherish this at all, if Orteil so desires this be taken down it WILL be taken down
+deal with it, despite these modifications this is still complete property of Orteil
+this only exists because I found it harder to mod the game with its built-in modding api
+*/
+
 /*=====================================================================================
 MISC HELPER FUNCTIONS
 =======================================================================================*/
