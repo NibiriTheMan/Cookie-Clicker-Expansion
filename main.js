@@ -8897,7 +8897,6 @@ Game.Launch=function()
 		},function(){
 			Game.UnlockTiered(this);
 		});
-		Game.last.displayName='<span style="font-size:90%;letter-spacing:-1px;position:relative;bottom:2px;">Sky citadel</span>';//shrink
 		
 		new Game.Object('Shipment','shipment|shipments|shipped|[X] galaxy fully explored|[X] galaxies fully explored','Brings in fresh cookies from the cookie planet.',9,5,{base:'shipment',xV:16,yV:16,w:64,rows:1,x:0,y:0},40000,function(me){
 			var mult=1;
