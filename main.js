@@ -13754,7 +13754,7 @@ Game.Launch=function()
 
 		//new Game.Achievement('Breathtaking','',[35,26]);Game.Objects['Sky citadel'].levelAchiev10=Game.last;
 		
-		order=1490;
+		order=1497;
 		Game.TieredAchievement('Salute the sun','','Sky citadel',1);
 		Game.TieredAchievement('The power of ultraviolet','','Sky citadel',2);
 		Game.TieredAchievement('To the exosphere, and beyond','','Sky citadel',3);
