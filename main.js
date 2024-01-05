@@ -7482,6 +7482,11 @@ Game.Launch=function()
 					'Your secret recipes are kept safely inside a giant underground vault.',
 					'Your chefs are working on new secret recipes!'
 					]));
+
+					if (Game.Objects['Sky citadel'].amount>0) list.push(choose([
+					'The skies are filled with praise towards your brand.',
+					'The air smells like cookies now. Sweet.'
+					]));
 					
 					if (Game.Objects['Shipment'].amount>0) list.push(choose([
 					'Your supermarkets are bustling with happy, hungry customers.',
