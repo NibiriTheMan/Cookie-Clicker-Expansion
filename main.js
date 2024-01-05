@@ -13751,7 +13751,26 @@ Game.Launch=function()
 		order=1050;
 		new Game.Achievement('All on deck',loc("Have <b>%1</b>.",loc("%1 cursor",LBeautify(900))),[0,19]);
 		new Game.Achievement('A round of applause',loc("Have <b>%1</b>.",loc("%1 cursor",LBeautify(1000)))+'<q>Boy, are my arms tired!</q>',[0,28]);
+
+		//new Game.Achievement('Breathtaking','',[35,26]);Game.Objects['Sky citadel'].levelAchiev10=Game.last;
 		
+		order=1490;
+		Game.TieredAchievement('Salute the sun','','Sky citadel',1);
+		Game.TieredAchievement('The power of ultraviolet','','Sky citadel',2);
+		Game.TieredAchievement('To the exosphere, and beyond','','Sky citadel',3);
+		Game.TieredAchievement('Daybreak','','Sky citadel',4);
+		Game.TieredAchievement('Environmental disaster','','Sky citadel',5);
+		Game.TieredAchievement('It\'s suffocating','','Sky citadel',6);
+		Game.TieredAchievement('Head in the clouds','','Sky citadel',7);
+		Game.TieredAchievement('Cloud nine','','Sky citadel',8);
+		Game.TieredAchievement('Get off your high horse','','Sky citadel',9);
+		Game.TieredAchievement('Salute the sun','','Sky citadel',10);
+		Game.TieredAchievement('Judging by the hole in the satellite picture','','Sky citadel',11);
+		Game.TieredAchievement('Can\'t look away','','Sky citadel',12);
+		Game.TieredAchievement('Aerophile','','Sky citadel',13);
+		Game.TieredAchievement('What\'s up with that red glowing spot at the peak anyways?','','Sky citadel',14);
+		Game.TieredAchievement('Next, we are going to steal the atmosphere','','Sky citadel',15);
+
 		//end of achievements
 		
 		
