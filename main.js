@@ -12402,7 +12402,7 @@ Game.Launch=function()
 		Game.NewUpgradeCookie({name:'Illusium cookies',desc:'You\'re losing your touch...',icon:[22,37],power:						7,price: getCookiePrice(63)});
 		
 		order=590;
-		Game.TieredUpgrade('Workers','<q>Finally, now you can stop doing this stuff manually!','Sky citadel',1);
+		Game.TieredUpgrade('Workers','<q>Finally, now you can stop doing this stuff manually!','Sky citadel',2);
 		
 		
 
