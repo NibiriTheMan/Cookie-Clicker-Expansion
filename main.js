@@ -12398,7 +12398,7 @@ Game.Launch=function()
 		order=250;Game.GrandmaSynergy('Foggy grandmas','A nice grandma to... uh... Huh, can\'t seem to remember.','Sky citadel');
 		
 		order=10020;
-		Game.NewUpgradeCookie({name:'Deuterium cookies',desc:'Almost heavy enough to make it quite the ugly scene on your foot when you drop it.',icon:[22,36],power:						7,price: getCookiePrice(63)});
+		Game.NewUpgradeCookie({name:'Deuterium cookies',desc:'Almost heavy enough to make it quite the ugly scene on your foot when you drop it.',icon:[21,37],power:						7,price: getCookiePrice(63)});
 		
 		
 
