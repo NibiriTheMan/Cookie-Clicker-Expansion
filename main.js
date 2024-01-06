@@ -12397,8 +12397,10 @@ Game.Launch=function()
 		
 		order=250;Game.GrandmaSynergy('Foggy grandmas','A nice grandma to... uh... Huh, can\'t seem to remember.','Sky citadel');
 		
-		order=90000;
-		new Game.UpgradeCookie({name:'Aged cookies',desc:'Literally aged like milk, I wouldn\'t eat these if I were you.',icon:[28,36],requirement:Game.Objects['Grandma'].amount>=250,power:5,price:2*Math.pow(10,31)});
+		order=10020;
+		Game.NewUpgradeCookie({name:'Deuterium cookies',desc:'Almost heavy enough to make it quite the ugly scene on your foot when you drop it.',icon:[22,36],power:						7,price: getCookiePrice(63)});
+		
+		
 
 		//end of upgrades
 		
