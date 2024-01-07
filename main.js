@@ -7082,6 +7082,14 @@ Game.Launch=function()
 						'News : "Any sufficiently crude magic is indistinguishable from technology", claims renowned technowizard.'
 						]));
 						
+						if (Game.Objects['Sky citadel'].amount>0) list.push(choose([
+						'News : excessive depletion of the atmosphere opened a hole up in the ozone layer; 3 casulties confirmed.',
+						'News : clouds found to not taste like cotton candy! "Not surprising," says scientist.',
+						'News : man found to have been attacked by multiple harpies! "We don\'t know what you\'re talking about," exclaims convicted group in question during trial.',
+						'News : multiple casualties reported from hypoxia as a result of carelessly climbing a sky citadel!',
+						'News : sky citadel collapses! 18 dead, 102 injured, and 1 left completely confused.',
+						]));
+						
 						if (Game.Objects['Shipment'].amount>0) list.push(choose([
 						'News : new chocolate planet found, becomes target of cookie-trading spaceships!',
 						'News : massive chocolate planet found with 99.8% certified pure dark chocolate core!',
