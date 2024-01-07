@@ -13787,11 +13787,11 @@ Game.Launch=function()
 		Game.TieredAchievement('Head in the clouds','','Sky citadel',7);
 		Game.TieredAchievement('Cloud nine','','Sky citadel',8);
 		Game.TieredAchievement('Get off your high horse','','Sky citadel',9);
-		Game.TieredAchievement('Salute the sun','','Sky citadel',10);
+		Game.TieredAchievement('Background microwave radiation','','Sky citadel',10);
 		Game.TieredAchievement('Judging by the hole in the satellite picture','','Sky citadel',11);
-		Game.TieredAchievement('Can\'t look away','','Sky citadel',12);
+		Game.TieredAchievement('The good, the bad, and the tall','','Sky citadel',12);
 		Game.TieredAchievement('Aerophile','','Sky citadel',13);
-		Game.TieredAchievement('What\'s up with that red glowing spot at the peak anyways?','','Sky citadel',14);
+		Game.TieredAchievement('Bit concerning the power cell is bright red, innit?','','Sky citadel',14);
 		Game.TieredAchievement('Next, we are going to steal the atmosphere','','Sky citadel',15);
 
 		//end of achievements
