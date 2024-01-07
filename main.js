@@ -11718,6 +11718,7 @@ Game.Launch=function()
 		Game.NewUnshackleBuilding({building:'Bank',q:'All-time highs, all the time.'});
 		Game.NewUnshackleBuilding({building:'Temple',q:'You can make a religion out of this.'});
 		Game.NewUnshackleBuilding({building:'Wizard tower',q:'There\'s a spell for everything.'});
+		Game.NewUnshackleBuilding({building:'Sky citadel',q:'We all need a breath of fresh air.'});
 		Game.NewUnshackleBuilding({building:'Shipment',q:'Everywhere at once.'});
 		Game.NewUnshackleBuilding({building:'Alchemy lab',q:'Anything you see, you can make.'});
 		Game.NewUnshackleBuilding({building:'Portal',q:'Parallels unparalleled.'});
