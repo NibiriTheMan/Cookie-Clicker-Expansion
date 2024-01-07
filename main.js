@@ -4285,6 +4285,7 @@ Game.Launch=function()
 				//Game.BuildAscendTree();
 			}
 		}
+
 		Game.BuildAscendTree=function(justBought)
 		{
 			var str='';
