@@ -5896,6 +5896,7 @@ Game.Launch=function()
 			'Bank':['Juicy profits','Recession'],
 			'Temple':['Fervent adoration','Crisis of faith'],
 			'Wizard tower':['Manabloom','Magivores'],
+			'Sky citadel':['Red skies at night','Harpies'],
 			'Shipment':['Delicious lifeforms','Black holes'],
 			'Alchemy lab':['Breakthrough','Lab disaster'],
 			'Portal':['Righteous cataclysm','Dimensional calamity'],
