@@ -9036,7 +9036,7 @@ Game.Launch=function()
 		Game.YouCustomizer.render=function()
 		{
 			var me=Game.Objects['You'];
-			var ctx=me.ctxAdd;
+			var ctx = me.ctxAdd;
 			var img='you.png';
 			var imgAddons='youAddons.png?v='+Game.version;
 			
