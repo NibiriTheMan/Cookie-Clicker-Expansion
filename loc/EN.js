@@ -1071,7 +1071,7 @@ AddLanguage('EN','english',{
 	"sky citadels": "/",
 	"%1 sky citadel": [
 		"%1 sky citadel",
-		"%1 sky citadel"
+		"%1 sky citadels"
 	],
 	"[Sky citadel quote]Harvests the air to be extracted and turned into cookies.": "Harvests the air to be extracted and turned into cookies.",
 	"[Sky citadel business name]Citadel": "Citadel",
