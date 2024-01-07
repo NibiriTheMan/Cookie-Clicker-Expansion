@@ -1074,8 +1074,8 @@ AddLanguage('EN','english',{
 		"%1 sky citadel"
 	],
 	"[Sky citadel quote]Harvests the air to be extracted and turned into cookies.": "Harvests the air to be extracted and turned into cookies.",
-	"[Sky citadel business name]Meme": "Meme",
-	"[Sky citadel business quote]Cookie memes are all the rage! With just the right amount of social media astroturfing, your brand image will be all over the cyberspace.": "Cookie memes are all the rage! With just the right amount of social media astroturfing, your brand image will be all over the cyberspace.",
+	"[Sky citadel business name]Citadel": "Citadel",
+	"[Sky citadel business quote]Placeholder.": "Placeholder.",
 	"Shipment": "/",
 	"shipment": "/",
 	"shipments": "/",
