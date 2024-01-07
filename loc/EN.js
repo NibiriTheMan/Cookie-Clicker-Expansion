@@ -719,6 +719,11 @@ AddLanguage('EN','english',{
 		"massive chocolate planet found with 99.8% certified pure dark chocolate core!",
 		"chocolate-based organisms found on distant planet!"
 	],
+	"Ticker (Sky citadel)": [
+		"new chocolate planet found, becomes target of cookie-trading spaceships!",
+		"massive chocolate planet found with 99.8% certified pure dark chocolate core!",
+		"chocolate-based organisms found on distant planet!"
+	],
 	"Ticker (Alchemy lab)": [
 		"national gold reserves dwindle as more and more of the precious mineral is turned to cookies!",
 		"silver found to also be transmutable into white chocolate!",
