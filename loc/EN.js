@@ -1066,6 +1066,16 @@ AddLanguage('EN','english',{
 	"[Wizard tower quote]Summons cookies with magic spells.": "Summons cookies with magic spells.",
 	"[Wizard tower business name]Meme": "Meme",
 	"[Wizard tower business quote]Cookie memes are all the rage! With just the right amount of social media astroturfing, your brand image will be all over the cyberspace.": "Cookie memes are all the rage! With just the right amount of social media astroturfing, your brand image will be all over the cyberspace.",
+	"Sky citadel": "/",
+	"sky citadel": "/",
+	"sky citadels": "/",
+	"%1 sky citadel": [
+		"%1 sky citadel",
+		"%1 sky citadel"
+	],
+	"[Sky citadel quote]Summons cookies with magic spells.": "Summons cookies with magic spells.",
+	"[Sky citadel business name]Meme": "Meme",
+	"[Sky citadel business quote]Cookie memes are all the rage! With just the right amount of social media astroturfing, your brand image will be all over the cyberspace.": "Cookie memes are all the rage! With just the right amount of social media astroturfing, your brand image will be all over the cyberspace.",
 	"Shipment": "/",
 	"shipment": "/",
 	"shipments": "/",
