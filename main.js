@@ -10,13 +10,6 @@ Spoilers ahead.
 http://orteil.dashnet.org
 */
 
-/*
-...With some modifications by Nibiri
-Note from mod creator: do not cherish this at all, if Orteil so desires this be taken down it WILL be taken down
-deal with it, despite these modifications this is still complete property of Orteil
-this only exists because I found it harder to mod the game with its built-in modding api
-*/
-
 /*=====================================================================================
 MISC HELPER FUNCTIONS
 =======================================================================================*/
@@ -2242,6 +2235,12 @@ Game.Launch=function()
 		Game.bakeryNameL=l('bakeryName');
 		Game.bakeryNameSet=function(what)
 		{
+			if (Game.bakeryName!=what && what=='harley')
+			{//added by request as thanks to the very nice person who kept my twitter handle safe when my account got hacked by crypto scammers
+				var rect=Game.bakeryNameL.getBounds();
+				Game.Popup('Horse complex!',(rect.left+rect.right)/2,(rect.top+rect.bottom)/2-48);
+			}
+			
 			try
 			{
 				var exp=new RegExp('[^\'\\-_0-9 \\p{L}]','gu');
@@ -2501,7 +2500,7 @@ Game.Launch=function()
 		
 		Game.GrabData=function()
 		{
-			if (!App) ajax('grab.txt',Game.GrabDataResponse);
+			if (!App) ajax('/patreon/grab.php',Game.GrabDataResponse);
 			else App.grabData(function(res){
 				Game.heralds=res?(res.playersN||1):1;
 				Game.heralds=Math.max(0,Math.min(100,Math.ceil(Game.heralds/100*100)/100));
@@ -4285,7 +4284,6 @@ Game.Launch=function()
 				//Game.BuildAscendTree();
 			}
 		}
-
 		Game.BuildAscendTree=function(justBought)
 		{
 			var str='';
@@ -4689,7 +4687,6 @@ Game.Launch=function()
 			if (Game.Has('Nonillion fingers')) add*=	20;
 			if (Game.Has('Decillion fingers')) add*=	20;
 			if (Game.Has('Undecillion fingers')) add*=	20;
-			if (Game.Has('Duodecillion fingers')) add*=	20;
 			if (Game.Has('Unshackled cursors')) add*=	25;
 			
 			var num=0;
@@ -5899,7 +5896,6 @@ Game.Launch=function()
 			'Bank':['Juicy profits','Recession'],
 			'Temple':['Fervent adoration','Crisis of faith'],
 			'Wizard tower':['Manabloom','Magivores'],
-			'Sky citadel':['Red skies at night','Harpies'],
 			'Shipment':['Delicious lifeforms','Black holes'],
 			'Alchemy lab':['Breakthrough','Lab disaster'],
 			'Portal':['Righteous cataclysm','Dimensional calamity'],
@@ -7036,14 +7032,13 @@ Game.Launch=function()
 						}
 					}
 					else
-					{	
+					{
 						if (Game.Objects['Farm'].amount>0) list.push(choose([
 						'News : cookie farms suspected of employing undeclared elderly workforce!',
 						'News : cookie farms release harmful chocolate in our rivers, says scientist!',
 						'News : genetically-modified chocolate controversy strikes cookie farmers!',
 						'News : free-range farm cookies popular with today\'s hip youth, says specialist.',
-						'News : farm cookies deemed unfit for vegans, says nutritionist.',
-						'News : cookie farm closed down for secretly farming useless nonchocolate crops! Authorities are still unsure on who is behind this.'
+						'News : farm cookies deemed unfit for vegans, says nutritionist.'
 						]));
 						
 						if (Game.Objects['Mine'].amount>0) list.push(choose([
@@ -7086,21 +7081,12 @@ Game.Launch=function()
 						'News : "Any sufficiently crude magic is indistinguishable from technology", claims renowned technowizard.'
 						]));
 						
-						if (Game.Objects['Sky citadel'].amount>0) list.push(choose([
-						'News : excessive depletion of the atmosphere opened a hole up in the ozone layer; 3 casulties confirmed.',
-						'News : clouds found to not taste like cotton candy! "Not surprising," says scientist.',
-						'News : man found to have been attacked by multiple harpies! "We don\'t know what you\'re talking about," exclaims convicted group in question during trial.',
-						'News : multiple casualties reported from hypoxia as a result of carelessly climbing a sky citadel!',
-						'News : sky citadel collapses! 18 dead, 102 injured, and 1 left completely confused.',
-						]));
-						
 						if (Game.Objects['Shipment'].amount>0) list.push(choose([
 						'News : new chocolate planet found, becomes target of cookie-trading spaceships!',
 						'News : massive chocolate planet found with 99.8% certified pure dark chocolate core!',
 						'News : space tourism booming as distant planets attract more bored millionaires!',
 						'News : chocolate-based organisms found on distant planet!',
-						'News : ancient baking artifacts found on distant planet; "terrifying implications", experts say.',
-						'News : news writer finds herself lost in space. Help!'
+						'News : ancient baking artifacts found on distant planet; "terrifying implications", experts say.'
 						]));
 						
 						if (Game.Objects['Alchemy lab'].amount>0) list.push(choose([
@@ -7244,7 +7230,6 @@ Game.Launch=function()
 				{
 					if (Math.random()<0.05)
 					{
-						if (Game.HasAchiev('A round of applause')) list.push('News : deranged cookie manufacturer '+Game.bakeryName+' found to keep a collection of at least 1000 human hands!');
 						if (Game.HasAchiev('Base 10')) list.push('News : cookie manufacturer completely forgoes common sense, lets strange obsession with round numbers drive building decisions!');
 						if (Game.HasAchiev('From scratch')) list.push('News : follow the tear-jerking, riches-to-rags story about a local cookie manufacturer who decided to give it all up!');
 						if (Game.HasAchiev('A world filled with cookies')) list.push('News : known universe now jammed with cookies! No vacancies!');
@@ -7490,11 +7475,6 @@ Game.Launch=function()
 					'Your secret recipes are kept safely inside a giant underground vault.',
 					'Your chefs are working on new secret recipes!'
 					]));
-
-					if (Game.Objects['Sky citadel'].amount>0) list.push(choose([
-					'The skies are filled with praise towards your brand.',
-					'The air smells like cookies now. Sweet.'
-					]));
 					
 					if (Game.Objects['Shipment'].amount>0) list.push(choose([
 					'Your supermarkets are bustling with happy, hungry customers.',
@@ -7694,7 +7674,7 @@ Game.Launch=function()
 		Game.last=0;
 		
 		Game.storeToRefresh=1;
-		Game.priceIncrease=1.3;
+		Game.priceIncrease=1.15;
 		Game.buyBulk=1;
 		Game.buyMode=1;//1 for buy, -1 for sell
 		Game.buyBulkOld=Game.buyBulk;//used to undo changes from holding Shift or Ctrl
@@ -8700,7 +8680,7 @@ Game.Launch=function()
 		}
 		
 		//define objects
-		new Game.Object('Cursor','cursor|cursors|clicked|[X] extra finger|[X] extra fingers','Autoclicks once every 10 seconds.',0,0,{},22,function(me){
+		new Game.Object('Cursor','cursor|cursors|clicked|[X] extra finger|[X] extra fingers','Autoclicks once every 10 seconds.',0,0,{},15,function(me){
 			var add=0;
 			if (Game.Has('Thousand fingers')) add+=		0.1;
 			if (Game.Has('Million fingers')) add*=		5;
@@ -8714,7 +8694,6 @@ Game.Launch=function()
 			if (Game.Has('Nonillion fingers')) add*=	20;
 			if (Game.Has('Decillion fingers')) add*=	20;
 			if (Game.Has('Undecillion fingers')) add*=	20;
-			if (Game.Has('Duodecillion fingers')) add*=	20;
 			if (Game.Has('Unshackled cursors')) add*=	25;
 			var mult=1;
 			var num=0;
@@ -8739,7 +8718,6 @@ Game.Launch=function()
 			if (this.amount>=450) Game.Unlock('Nonillion fingers');
 			if (this.amount>=500) Game.Unlock('Decillion fingers');
 			if (this.amount>=550) Game.Unlock('Undecillion fingers');
-			if (this.amount>=700) Game.Unlock('Duodecillion fingers');
 			
 			if (this.amount>=1) Game.Win('Click');if (this.amount>=2) Game.Win('Double-click');if (this.amount>=50) Game.Win('Mouse wheel');if (this.amount>=100) Game.Win('Of Mice and Men');if (this.amount>=200) Game.Win('The Digital');if (this.amount>=300) Game.Win('Extreme polydactyly');if (this.amount>=400) Game.Win('Dr. T');if (this.amount>=500) Game.Win('Thumbs, phalanges, metacarpals');if (this.amount>=600) Game.Win('With her finger and her thumb');if (this.amount>=700) Game.Win('Gotta hand it to you');if (this.amount>=800) Game.Win('The devil\'s workshop');if (this.amount>=900) Game.Win('All on deck');if (this.amount>=1000) Game.Win('A round of applause');
 		});
@@ -8768,7 +8746,7 @@ Game.Launch=function()
 			if (Game.season=='christmas') list.push('elfGrandma');
 			if (Game.season=='easter') list.push('bunnyGrandma');
 			return choose(list)+'.png';
-		},bg:'grandmaBackground.png',xV:8,yV:8,w:32,rows:3,x:0,y:16},800,function(me){
+		},bg:'grandmaBackground.png',xV:8,yV:8,w:32,rows:3,x:0,y:16},100,function(me){
 			var mult=1;
 			for (var i in Game.GrandmaSynergies)
 			{
@@ -8826,7 +8804,7 @@ Game.Launch=function()
 		};
 		
 		
-		new Game.Object('Farm','farm|farms|harvested|[X] more acre|[X] more acres','Grows cookie plants from cookie seeds.',3,2,{base:'farm',xV:8,yV:8,w:64,rows:2,x:0,y:16},1000,function(me){
+		new Game.Object('Farm','farm|farms|harvested|[X] more acre|[X] more acres','Grows cookie plants from cookie seeds.',3,2,{base:'farm',xV:8,yV:8,w:64,rows:2,x:0,y:16},500,function(me){
 			var mult=1;
 			mult*=Game.GetTieredCpsMult(me);
 			mult*=Game.magicCpS(me.name);
@@ -8838,7 +8816,7 @@ Game.Launch=function()
 		Game.last.minigameUrl='minigameGarden.js';
 		Game.last.minigameName=loc("Garden");
 		
-		new Game.Object('Mine','mine|mines|mined|[X] mile deeper|[X] miles deeper','Mines out cookie dough and chocolate chips.',4,3,{base:'mine',xV:16,yV:16,w:64,rows:2,x:0,y:24},20000,function(me){
+		new Game.Object('Mine','mine|mines|mined|[X] mile deeper|[X] miles deeper','Mines out cookie dough and chocolate chips.',4,3,{base:'mine',xV:16,yV:16,w:64,rows:2,x:0,y:24},10000,function(me){
 			var mult=1;
 			mult*=Game.GetTieredCpsMult(me);
 			mult*=Game.magicCpS(me.name);
@@ -8848,7 +8826,7 @@ Game.Launch=function()
 			if (this.amount>=Game.SpecialGrandmaUnlock && Game.Objects['Grandma'].amount>0) Game.Unlock(this.grandma.name);
 		});
 		
-		new Game.Object('Factory','factory|factories|mass-produced|[X] additional patent|[X] additional patents','Produces large quantities of cookies.',5,4,{base:'factory',xV:8,yV:0,w:64,rows:1,x:0,y:-22},6000,function(me){
+		new Game.Object('Factory','factory|factories|mass-produced|[X] additional patent|[X] additional patents','Produces large quantities of cookies.',5,4,{base:'factory',xV:8,yV:0,w:64,rows:1,x:0,y:-22},3000,function(me){
 			var mult=1;
 			mult*=Game.GetTieredCpsMult(me);
 			mult*=Game.magicCpS(me.name);
@@ -8896,16 +8874,6 @@ Game.Launch=function()
 		Game.last.displayName='<span style="font-size:90%;letter-spacing:-1px;position:relative;bottom:2px;">Wizard tower</span>';//shrink
 		Game.last.minigameUrl='minigameGrimoire.js';
 		Game.last.minigameName=loc("Grimoire");
-		
-		new Game.Object('Sky citadel','sky citadel|sky citadels|coagulated|The sky is [X]% cloudier|The sky is [X]% cloudier','Harvests the air to be extracted and turned into cookies.',21,36,{base:'skycitadel',xV:16,yV:16,w:48,rows:2,x:0,y:20},10000,function(me){
-			var mult=1;
-			mult*=Game.GetTieredCpsMult(me);
-			mult*=Game.magicCpS(me.name);
-			return me.baseCps*mult;
-		},function(){
-			Game.UnlockTiered(this);
-			if (this.amount>=Game.SpecialGrandmaUnlock && Game.Objects['Grandma'].amount>0) Game.Unlock(this.grandma.name);
-		});
 		
 		new Game.Object('Shipment','shipment|shipments|shipped|[X] galaxy fully explored|[X] galaxies fully explored','Brings in fresh cookies from the cookie planet.',9,5,{base:'shipment',xV:16,yV:16,w:64,rows:1,x:0,y:0},40000,function(me){
 			var mult=1;
@@ -9036,7 +9004,7 @@ Game.Launch=function()
 		Game.YouCustomizer.render=function()
 		{
 			var me=Game.Objects['You'];
-			var ctx=Game.Objects['You'].ctxAdd;
+			var ctx=me.ctxAdd;
 			var img='you.png';
 			var imgAddons='youAddons.png?v='+Game.version;
 			
@@ -9324,7 +9292,6 @@ Game.Launch=function()
 			'Bank':{name:'Investor',desc:'Business folks with a nose for profit, ready to finance your venture as long as there\'s money to be made.',icon:5},
 			'Temple':{name:'Like',desc:'Your social media page is going viral! Amassing likes is the key to a lasting online presence and juicy advertising deals.',icon:9},
 			'Wizard tower':{name:'Meme',desc:'Cookie memes are all the rage! With just the right amount of social media astroturfing, your brand image will be all over the cyberspace.',icon:6},
-			'Sky citadel':{name:'Citadel',desc:'We\'re not sure how this will help the brand, but whatever, just trust the process.',icon:6},
 			'Shipment':{name:'Supermarket',desc:'A gigantic cookie emporium - your very own retail chain.',icon:7},
 			'Alchemy lab':{name:'Stock share',desc:'You\'re officially on the stock market, and everyone wants a piece!',icon:8},
 			'Portal':{name:'TV show',desc:'Your cookies have their own sitcom! Hilarious baking hijinks set to the cheesiest laughtrack.',icon:10},
@@ -9840,25 +9807,24 @@ Game.Launch=function()
 		//each building has several upgrade tiers
 		//all upgrades in the same tier have the same color, unlock threshold and price multiplier
 		Game.Tiers={
-			1:{name:'Plain',unlock:1,achievUnlock:1,iconRow:0,color:'#ccb3ac',price:					100},
-			2:{name:'Berrylium',unlock:5,achievUnlock:50,iconRow:1,color:'#ff89e7',price:				700},
-			3:{name:'Blueberrylium',unlock:25,achievUnlock:100,iconRow:2,color:'#00deff',price:			7000},
-			4:{name:'Chalcedhoney',unlock:50,achievUnlock:150,iconRow:13,color:'#ffcc2f',price:			700000},
-			5:{name:'Buttergold',unlock:100,achievUnlock:200,iconRow:14,color:'#e9d673',price:			70000000},
-			6:{name:'Sugarmuck',unlock:150,achievUnlock:250,iconRow:15,color:'#a8bf91',price:			7000000000},
-			7:{name:'Jetmint',unlock:200,achievUnlock:300,iconRow:16,color:'#60ff50',price:				7000000000000},
-			8:{name:'Cherrysilver',unlock:250,achievUnlock:350,iconRow:17,color:'#f01700',price:		7000000000000000},
-			9:{name:'Hazelrald',unlock:300,achievUnlock:400,iconRow:18,color:'#9ab834',price:			7000000000000000000},
-			10:{name:'Mooncandy',unlock:350,achievUnlock:450,iconRow:19,color:'#7e7ab9',price:			7000000000000000000000},
-			11:{name:'Astrofudge',unlock:400,achievUnlock:500,iconRow:28,color:'#9a3316',price:			70000000000000000000000000},
-			12:{name:'Alabascream',unlock:450,achievUnlock:550,iconRow:30,color:'#c1a88c',price:		700000000000000000000000000000},
-			13:{name:'Iridyum',unlock:500,achievUnlock:600,iconRow:31,color:'#adb1b3',price:			7000000000000000000000000000000000},
-			14:{name:'Glucosmium',unlock:550,achievUnlock:650,iconRow:34,color:'#ff89e7',price:			70000000000000000000000000000000000000},
-			15:{name:'Glimmeringue',unlock:600,achievUnlock:700,iconRow:36,color:'#fffaa8',price:		700000000000000000000000000000000000000000},
-			16:{name:'Kalathunzite',unlock:700,achievUnlock:800,iconRow:37,color:'#ffa18a',price:		700000000000000000000000000000000000000000000},
-			'synergy1':{name:'Synergy I',unlock:15,iconRow:20,color:'#008595',special:1,req:'Synergies Vol. I',price:			2000000},
-			'synergy2':{name:'Synergy II',unlock:75,iconRow:29,color:'#008595',special:1,req:'Synergies Vol. II',price:			2000000000000},
-			'fortune':{name:'Fortune',unlock:-1,iconRow:32,color:'#9ab834',special:1,price:				777777777777777777777777777777},
+			1:{name:'Plain',unlock:1,achievUnlock:1,iconRow:0,color:'#ccb3ac',price:					10},
+			2:{name:'Berrylium',unlock:5,achievUnlock:50,iconRow:1,color:'#ff89e7',price:				50},
+			3:{name:'Blueberrylium',unlock:25,achievUnlock:100,iconRow:2,color:'#00deff',price:			500},
+			4:{name:'Chalcedhoney',unlock:50,achievUnlock:150,iconRow:13,color:'#ffcc2f',price:			50000},
+			5:{name:'Buttergold',unlock:100,achievUnlock:200,iconRow:14,color:'#e9d673',price:			5000000},
+			6:{name:'Sugarmuck',unlock:150,achievUnlock:250,iconRow:15,color:'#a8bf91',price:			500000000},
+			7:{name:'Jetmint',unlock:200,achievUnlock:300,iconRow:16,color:'#60ff50',price:				500000000000},
+			8:{name:'Cherrysilver',unlock:250,achievUnlock:350,iconRow:17,color:'#f01700',price:		500000000000000},
+			9:{name:'Hazelrald',unlock:300,achievUnlock:400,iconRow:18,color:'#9ab834',price:			500000000000000000},
+			10:{name:'Mooncandy',unlock:350,achievUnlock:450,iconRow:19,color:'#7e7ab9',price:			500000000000000000000},
+			11:{name:'Astrofudge',unlock:400,achievUnlock:500,iconRow:28,color:'#9a3316',price:			5000000000000000000000000},
+			12:{name:'Alabascream',unlock:450,achievUnlock:550,iconRow:30,color:'#c1a88c',price:		50000000000000000000000000000},
+			13:{name:'Iridyum',unlock:500,achievUnlock:600,iconRow:31,color:'#adb1b3',price:			500000000000000000000000000000000},
+			14:{name:'Glucosmium',unlock:550,achievUnlock:650,iconRow:34,color:'#ff89e7',price:			5000000000000000000000000000000000000},
+			15:{name:'Glimmeringue',unlock:600,achievUnlock:700,iconRow:36,color:'#fffaa8',price:		50000000000000000000000000000000000000000},
+			'synergy1':{name:'Synergy I',unlock:15,iconRow:20,color:'#008595',special:1,req:'Synergies Vol. I',price:			200000},
+			'synergy2':{name:'Synergy II',unlock:75,iconRow:29,color:'#008595',special:1,req:'Synergies Vol. II',price:			200000000000},
+			'fortune':{name:'Fortune',unlock:-1,iconRow:32,color:'#9ab834',special:1,price:				77777777777777777777777777777},
 		};
 		for (var i in Game.Tiers){Game.Tiers[i].upgrades=[];}
 		Game.GetIcon=function(type,tier)
@@ -9966,7 +9932,7 @@ Game.Launch=function()
 		//define upgrades
 		//WARNING : do NOT add new upgrades in between, this breaks the saves. Add them at the end !
 		var order=100;//this is used to set the order in which the items are listed
-		new Game.Upgrade('Reinforced index finger',loc("The mouse and cursors are <b>twice</b> as efficient.")+'<q>prod prod</q>',280,[0,0]);Game.MakeTiered(Game.last,1,0);
+		new Game.Upgrade('Reinforced index finger',loc("The mouse and cursors are <b>twice</b> as efficient.")+'<q>prod prod</q>',100,[0,0]);Game.MakeTiered(Game.last,1,0);
 		new Game.Upgrade('Carpal tunnel prevention cream',loc("The mouse and cursors are <b>twice</b> as efficient.")+'<q>it... it hurts to click...</q>',500,[0,1]);Game.MakeTiered(Game.last,2,0);
 		new Game.Upgrade('Ambidextrous',loc("The mouse and cursors are <b>twice</b> as efficient.")+'<q>Look ma, both hands!</q>',10000,[0,2]);Game.MakeTiered(Game.last,3,0);
 		new Game.Upgrade('Thousand fingers',loc("The mouse and cursors gain <b>+%1</b> cookies for each non-cursor building owned.",0.1)+'<q>clickity</q>',100000,[0,13]);Game.MakeTiered(Game.last,4,0);
@@ -12391,36 +12357,12 @@ Game.Launch=function()
 		
 		order=100;new Game.Upgrade('Undecillion fingers',getStrThousandFingersGain(20)+'<q>Whatever you touch<br>turns to dough in your clutch.</q>',10000000000000000000000000000000,[12,36]);Game.MakeTiered(Game.last,15,0);
 		order=150;new Game.Upgrade('Omniplast mouse',getStrClickingGains(1)+'<q>This mouse is, by virtue of the strange elements that make it up, present in every position in space simultaneously, in a manner; this alleviates its owner from the need to move it around, redirecting all such kinetic power to the intensity of its clicks.</q>',500000000000000000000000000000000,[11,36]);Game.MakeTiered(Game.last,15,11);
-		order=100;new Game.Upgrade('Duodecillion fingers',getStrThousandFingersGain(20)+'<q>Congratulations.<br>You\'ve mastered the core mechanic of the game.</q>',10000000000000000000000000000000000,[12,37]);Game.MakeTiered(Game.last,16,0);
-		order=300;Game.TieredUpgrade('Hyper-ionized soil','<q>Side effects as a result of consumption of the resulting crops may include:<br>Death.</q>','Farm',16);
 		
-		order=590;Game.TieredUpgrade('Darker red','<q>More darkness, more absorption.','Sky citadel',1);
-		
-		order=250;Game.GrandmaSynergy('Foggy grandmas','A nice grandma to... uh... Huh, can\'t seem to remember.','Sky citadel');
-		
-		order=10020;
-		Game.NewUpgradeCookie({name:'Deuterium cookies',desc:'Almost heavy enough to make it quite the ugly scene on your foot when you drop it.',icon:[21,37],power:						7,price: getCookiePrice(63)});
-		Game.NewUpgradeCookie({name:'Illusium cookies',desc:'You\'re losing your touch...',icon:[22,37],power:						7,price: getCookiePrice(64)});
-		
-		order=590;
-		Game.TieredUpgrade('Human labor','<q>Okay, but why were you doing this manually before?','Sky citadel',2);
-		Game.TieredUpgrade('Locked doors','<q>To stop them darn teenagers from drawing grafitti on the power cell and obstructing it, of course.','Sky citadel',3);
-		Game.TieredUpgrade('Solar energy','<q>Environmentally safe, AND can be weaponized! How genius!','Sky citadel',4);
-		Game.TieredUpgrade('Extra floor','<q>Not too close to the sun, though. Then your wings might melt. Well, metaphorical wings.','Sky citadel',5);
-		Game.TieredUpgrade('Backwards compatability','<q>Your air condensated back into water? No problem! That can be used too now!','Sky citadel',6);
-		Game.TieredUpgrade('Internal labyrinth','<q>Keeps any intruders out. Although you might have to clean a bit more dead bodies out than usual, because people do tend to get lost in these.','Sky citadel',7);
-		Game.TieredUpgrade('Heat wave','<q>Cities will burn, but hey, you can\'t bake a cake without cracking a few eggs.','Sky citadel',8);
-		Game.TieredUpgrade('Lawyers','<q>Apparently, you\'re trespassing by building this high. A few settlements can fix that.','Sky citadel',9);
-		Game.TieredUpgrade('Harpy repellent','<q>Because people keep losing their heads from these. Not much else needs to be said.','Sky citadel',10);
-		Game.TieredUpgrade('Elevators','<q>Fast and easy transport to the top? How have we not thought of this before?!','Sky citadel',11);
-		Game.TieredUpgrade('Cell towers','<q>Now, you can charge insane prices for cell service! How diabolical!','Sky citadel',12);
-		Game.TieredUpgrade('Chocolate flavored air','<q>Some think they can outsmart you. Maybe, maybe... I have yet to meet one who can outsmart chocolate.','Sky citadel',13);
-		Game.TieredUpgrade('Artificial sun','<q>With some combining of your previous upgrades, you can now just create your own sun. Has science gone too far?','Sky citadel',14);
-		Game.TieredUpgrade('Law of entropy','<q>To summarize plainly: chaos. And this means good things for extraction purposes.','Sky citadel',15);
-		
-		
-
 		//end of upgrades
+		
+		
+		
+		
 		
 		Game.seasons={
 			'christmas':{name:'Christmas',start:'Christmas season has started!',over:'Christmas season is over.',trigger:'Festive biscuit'},
@@ -13786,26 +13728,7 @@ Game.Launch=function()
 		order=1050;
 		new Game.Achievement('All on deck',loc("Have <b>%1</b>.",loc("%1 cursor",LBeautify(900))),[0,19]);
 		new Game.Achievement('A round of applause',loc("Have <b>%1</b>.",loc("%1 cursor",LBeautify(1000)))+'<q>Boy, are my arms tired!</q>',[0,28]);
-
-		//new Game.Achievement('Breathtaking','',[35,26]);Game.Objects['Sky citadel'].levelAchiev10=Game.last;
 		
-		order=1497;
-		Game.TieredAchievement('Salute the sun','','Sky citadel',1);
-		Game.TieredAchievement('The power of ultraviolet','','Sky citadel',2);
-		Game.TieredAchievement('To the exosphere, and beyond','','Sky citadel',3);
-		Game.TieredAchievement('Daybreak','','Sky citadel',4);
-		Game.TieredAchievement('Environmental disaster','','Sky citadel',5);
-		Game.TieredAchievement('It\'s suffocating','','Sky citadel',6);
-		Game.TieredAchievement('Head in the clouds','','Sky citadel',7);
-		Game.TieredAchievement('Cloud nine','','Sky citadel',8);
-		Game.TieredAchievement('Get off your high horse','','Sky citadel',9);
-		Game.TieredAchievement('Background microwave radiation','','Sky citadel',10);
-		Game.TieredAchievement('Judging by the hole in the satellite picture','','Sky citadel',11);
-		Game.TieredAchievement('The good, the bad, and the tall','','Sky citadel',12);
-		Game.TieredAchievement('Aerophile','','Sky citadel',13);
-		Game.TieredAchievement('Bit concerning the power cell is bright red, innit?','','Sky citadel',14);
-		Game.TieredAchievement('Next, we are going to steal the atmosphere','','Sky citadel',15);
-
 		//end of achievements
 		
 		
