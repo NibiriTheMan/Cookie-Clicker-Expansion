@@ -12420,7 +12420,9 @@ Game.Launch=function()
 		Game.TieredUpgrade('Artificial sun','<q>With some combining of your previous upgrades, you can now just create your own sun. Has science gone too far?','Sky citadel',14);
 		Game.TieredUpgrade('Law of entropy','<q>To summarize plainly: chaos. And this means good things for extraction purposes.','Sky citadel',15);
 		
-		
+		order=5000;
+		Game.SynergyUpgrade('Wizard workers','<q>These are kind of like towers, I\'m sure they\'ll feel right at home.</q>','Sky citadel','Wizard tower','synergy1');
+		Game.SynergyUpgrade('Vermillion beakers','<q>We were already basically doing alchemy by doing this, so why not.</q>','Sky citadel','Alchemy lab','synergy2');
 
 		//end of upgrades
 		
