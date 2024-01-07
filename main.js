@@ -12403,7 +12403,7 @@ Game.Launch=function()
 		
 		order=590;
 		Game.TieredUpgrade('Labor','<q>Okay, but why were you doing this manually before?','Sky citadel',2);
-		Game.TieredUpgrade('Locked doors','<q>To stop the teenagers from drawing grafitti on the power cell and obstructing it, of course.','Sky citadel',3);
+		Game.TieredUpgrade('Locked doors','<q>To stop them darn teenagers from drawing grafitti on the power cell and obstructing it, of course.','Sky citadel',3);
 		Game.TieredUpgrade('Solar energy','<q>Environmentally safe, AND can be weaponized! How genius!','Sky citadel',4);
 		
 		
