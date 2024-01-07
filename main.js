@@ -12402,9 +12402,20 @@ Game.Launch=function()
 		Game.NewUpgradeCookie({name:'Illusium cookies',desc:'You\'re losing your touch...',icon:[22,37],power:						7,price: getCookiePrice(64)});
 		
 		order=590;
-		Game.TieredUpgrade('Labor','<q>Okay, but why were you doing this manually before?','Sky citadel',2);
+		Game.TieredUpgrade('Human labor','<q>Okay, but why were you doing this manually before?','Sky citadel',2);
 		Game.TieredUpgrade('Locked doors','<q>To stop them darn teenagers from drawing grafitti on the power cell and obstructing it, of course.','Sky citadel',3);
 		Game.TieredUpgrade('Solar energy','<q>Environmentally safe, AND can be weaponized! How genius!','Sky citadel',4);
+		Game.TieredUpgrade('Extra floor','<q>Not too close to the sun, though. Then your wings might melt. Well, metaphorical wings.','Sky citadel',6);
+		Game.TieredUpgrade('Backwards compatability','<q>Your air condensated back into water? No problem! That can be used too now!','Sky citadel',5);
+		Game.TieredUpgrade('Internal labyrinth','<q>Keeps any intruders out. Although you might have to clean a bit more dead bodies out than usual, because people do tend to get lost in these.','Sky citadel',7);
+		Game.TieredUpgrade('Heat wave','<q>Cities will burn, but hey, you can\'t bake a cake without cracking a few eggs.','Sky citadel',8);
+		Game.TieredUpgrade('Lawyers','<q>Apparently, you\'re trespassing by building this high. A few settlements can fix that.','Sky citadel',9);
+		Game.TieredUpgrade('Harpy repellent','<q>Because people keep losing their heads from these. Not much else needs to be said.','Sky citadel',10);
+		Game.TieredUpgrade('Elevators','<q>Fast and easy transport to the top? How have we not thought of this before?!','Sky citadel',11);
+		Game.TieredUpgrade('Cell towers','<q>Now, you can charge insane prices for cell service! How diabolical!','Sky citadel',12);
+		Game.TieredUpgrade('Chocolate flavored air','<q>Some think they can outsmart you. Maybe, maybe... I have yet to meet one who can outsmart chocolate.','Sky citadel',13);
+		Game.TieredUpgrade('Artificial sun','<q>With some combining of your previous upgrades, you can now just create your own sun. Has science gone too far?','Sky citadel',14);
+		Game.TieredUpgrade('Law of entropy','<q>To summarize plainly: chaos. And this means good things for extraction purposes.','Sky citadel',15);
 		
 		
 
