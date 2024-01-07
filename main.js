@@ -12405,8 +12405,8 @@ Game.Launch=function()
 		Game.TieredUpgrade('Human labor','<q>Okay, but why were you doing this manually before?','Sky citadel',2);
 		Game.TieredUpgrade('Locked doors','<q>To stop them darn teenagers from drawing grafitti on the power cell and obstructing it, of course.','Sky citadel',3);
 		Game.TieredUpgrade('Solar energy','<q>Environmentally safe, AND can be weaponized! How genius!','Sky citadel',4);
-		Game.TieredUpgrade('Extra floor','<q>Not too close to the sun, though. Then your wings might melt. Well, metaphorical wings.','Sky citadel',6);
-		Game.TieredUpgrade('Backwards compatability','<q>Your air condensated back into water? No problem! That can be used too now!','Sky citadel',5);
+		Game.TieredUpgrade('Extra floor','<q>Not too close to the sun, though. Then your wings might melt. Well, metaphorical wings.','Sky citadel',5);
+		Game.TieredUpgrade('Backwards compatability','<q>Your air condensated back into water? No problem! That can be used too now!','Sky citadel',6);
 		Game.TieredUpgrade('Internal labyrinth','<q>Keeps any intruders out. Although you might have to clean a bit more dead bodies out than usual, because people do tend to get lost in these.','Sky citadel',7);
 		Game.TieredUpgrade('Heat wave','<q>Cities will burn, but hey, you can\'t bake a cake without cracking a few eggs.','Sky citadel',8);
 		Game.TieredUpgrade('Lawyers','<q>Apparently, you\'re trespassing by building this high. A few settlements can fix that.','Sky citadel',9);
