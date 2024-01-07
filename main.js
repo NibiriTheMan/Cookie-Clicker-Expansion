@@ -11718,7 +11718,6 @@ Game.Launch=function()
 		Game.NewUnshackleBuilding({building:'Bank',q:'All-time highs, all the time.'});
 		Game.NewUnshackleBuilding({building:'Temple',q:'You can make a religion out of this.'});
 		Game.NewUnshackleBuilding({building:'Wizard tower',q:'There\'s a spell for everything.'});
-		Game.NewUnshackleBuilding({building:'Sky citadel',q:'We all need a breath of fresh air.'});
 		Game.NewUnshackleBuilding({building:'Shipment',q:'Everywhere at once.'});
 		Game.NewUnshackleBuilding({building:'Alchemy lab',q:'Anything you see, you can make.'});
 		Game.NewUnshackleBuilding({building:'Portal',q:'Parallels unparalleled.'});
@@ -12424,7 +12423,9 @@ Game.Launch=function()
 		order=5000;
 		Game.SynergyUpgrade('Wizard workers','<q>These are kind of like towers, I\'m sure they\'ll feel right at home.</q>','Sky citadel','Wizard tower','synergy1');
 		Game.SynergyUpgrade('Vermillion beakers','<q>We were already basically doing alchemy by doing this, so why not.</q>','Sky citadel','Alchemy lab','synergy2');
-
+		order=10300;
+		Game.NewUnshackleBuilding({building:'Sky citadel',q:'We all need a breath of fresh air.'});
+		
 		//end of upgrades
 		
 		Game.seasons={
