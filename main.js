@@ -12402,7 +12402,9 @@ Game.Launch=function()
 		Game.NewUpgradeCookie({name:'Illusium cookies',desc:'You\'re losing your touch...',icon:[22,37],power:						7,price: getCookiePrice(63)});
 		
 		order=590;
-		Game.TieredUpgrade('Workers','<q>Finally, now you can stop doing this stuff manually!','Sky citadel',2);
+		Game.TieredUpgrade('Labor','<q>Okay, but why were you doing this manually before?','Sky citadel',2);
+		Game.TieredUpgrade('Locked doors','<q>To stop the teenagers from drawing grafitti on the power cell and obstructing it, of course.','Sky citadel',3);
+		Game.TieredUpgrade('Solar energy','<q>Environmentally safe, AND can be weaponized! How genius!','Sky citadel',4);
 		
 		
 
