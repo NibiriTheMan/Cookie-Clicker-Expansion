@@ -13815,6 +13815,49 @@ Game.Launch=function()
 		Game.ProductionAchievement('Azul profundo','Sky citadel',3);
 		new Game.Achievement('Clarion skies','',[36,26]);Game.Objects['Sky citadel'].levelAchiev10=Game.last;
 
+		order=1070;
+		new Game.Achievement('Abhorrent abomination','',[0,27]);Game.Objects['Cursor'].levelAchiev15=Game.last;
+		order=1120;
+		new Game.Achievement('At the edge of death','',[1,27]);Game.Objects['Grandma'].levelAchiev15=Game.last;
+		order=1220;
+		new Game.Achievement('Biggering','',[2,27]);Game.Objects['Farm'].levelAchiev15=Game.last;
+		order=1320;
+		new Game.Achievement('Desecrating the mantle','',[3,27]);Game.Objects['Mine'].levelAchiev15=Game.last;
+		order=1420;
+		new Game.Achievement('Copyright abuse','',[4,27]);Game.Objects['Factory'].levelAchiev15=Game.last;
+		order=1445;
+		new Game.Achievement('Economical boom','',[15,27]);Game.Objects['Bank'].levelAchiev15=Game.last;
+		order=1470;
+		new Game.Achievement('It\’s not the years, honey, it\’s the mileage','',[16,27]);Game.Objects['Temple'].levelAchiev15=Game.last;
+		order=1495;
+		new Game.Achievement('Lapsus linguae','',[17,27]);Game.Objects['Wizard tower'].levelAchiev15=Game.last;
+		order=1498;
+		new Game.Achievement('When you stare into the sun, it stares back','',[36,27]);Game.Objects['Sky citadel'].levelAchiev15=Game.last;
+		order=1520;
+		new Game.Achievement('If it\'s not on a map, it doesn\'t exist','',[5,27]);Game.Objects['Shipment'].levelAchiev15=Game.last;
+		order=1620;
+		new Game.Achievement('Quicksilver','',[6,27]);Game.Objects['Alchemy lab'].levelAchiev15=Game.last;
+		order=1720;
+		new Game.Achievement('Mr. Mandela','',[7,27]);Game.Objects['Portal'].levelAchiev15=Game.last;
+		order=1820;
+		new Game.Achievement('Time is relative','',[8,27]);Game.Objects['Time machine'].levelAchiev15=Game.last;
+		order=1920;
+		new Game.Achievement('Superposition (with style)','',[13,27]);Game.Objects['Antimatter condenser'].levelAchiev15=Game.last;
+		order=2020;
+		new Game.Achievement('Chromatose','',[14,27]);Game.Objects['Prism'].levelAchiev15=Game.last;
+		order=2120;
+		new Game.Achievement('Genetically probable','',[15,27]);Game.Objects['Chancemaker'].levelAchiev15=Game.last;
+		order=2220;
+		new Game.Achievement('Deeper and deeper and deeper and deeper and deeper and deeper and deeper and deeper and','',[16,27]);Game.Objects['Fractal engine'].levelAchiev15=Game.last;
+		order=2320;
+		new Game.Achievement('Outsourcing','',[33,27]);Game.Objects['Javascript console'].levelAchiev15=Game.last;
+		order=2420;
+		new Game.Achievement('You could get lost in these','',[34,27]);Game.Objects['Idleverse'].levelAchiev15=Game.last;
+		order=2420;
+		new Game.Achievement('Or so you thought','',[35,27]);Game.Objects['Cortex baker'].levelAchiev15=Game.last;
+		order=2420;
+		new Game.Achievement('Be the change you want to see in the world','',[36,27]);Game.Objects['You'].levelAchiev15=Game.last;
+						
 		//end of achievements
 		
 		
