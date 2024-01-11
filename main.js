@@ -8130,6 +8130,7 @@ Game.Launch=function()
 				{
 					me.level+=1;
 					if (me.level>=10 && me.levelAchiev10) Game.Win(me.levelAchiev10.name);
+					if (me.level>=15 && me.levelAchiev15) Game.Win(me.levelAchiev15.name);
 					if (!free) PlaySound('snd/upgrade.mp3',0.6);
 					Game.LoadMinigames();
 					me.refresh();
