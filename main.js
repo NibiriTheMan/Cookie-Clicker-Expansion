@@ -13830,12 +13830,12 @@ Game.Launch=function()
 		order=1820;new Game.Achievement('Time is relative','',[8,27]);Game.Objects['Time machine'].levelAchiev15=Game.last;
 		order=1920;new Game.Achievement('Superposition (with style)','',[13,27]);Game.Objects['Antimatter condenser'].levelAchiev15=Game.last;
 		order=2020;new Game.Achievement('Chromatose','',[14,27]);Game.Objects['Prism'].levelAchiev15=Game.last;
-		order=2120;new Game.Achievement('Genetically probable','',[15,27]);Game.Objects['Chancemaker'].levelAchiev15=Game.last;
-		order=2220;new Game.Achievement('Deeper and deeper and deeper and deeper and deeper and deeper and deeper and deeper and','',[16,27]);Game.Objects['Fractal engine'].levelAchiev15=Game.last;
-		order=2320;new Game.Achievement('Outsourcing','',[33,27]);Game.Objects['Javascript console'].levelAchiev15=Game.last;
-		order=2420;new Game.Achievement('You could get lost in these','',[34,27]);Game.Objects['Idleverse'].levelAchiev15=Game.last;
-		order=2420;new Game.Achievement('Or so you thought','',[35,27]);Game.Objects['Cortex baker'].levelAchiev15=Game.last;
-		order=2420;new Game.Achievement('Be the change you want to see in the world','',[36,27]);Game.Objects['You'].levelAchiev15=Game.last;
+		order=2120;new Game.Achievement('Genetically probable','',[19,27]);Game.Objects['Chancemaker'].levelAchiev15=Game.last;
+		order=2220;new Game.Achievement('Deeper and deeper and deeper and deeper and deeper and deeper and deeper and deeper and','',[20,27]);Game.Objects['Fractal engine'].levelAchiev15=Game.last;
+		order=2320;new Game.Achievement('Outsourcing','',[32,27]);Game.Objects['Javascript console'].levelAchiev15=Game.last;
+		order=2420;new Game.Achievement('You could get lost in these','',[33,27]);Game.Objects['Idleverse'].levelAchiev15=Game.last;
+		order=2520;new Game.Achievement('Or so you thought','',[34,27]);Game.Objects['Cortex baker'].levelAchiev15=Game.last;
+		order=2620;new Game.Achievement('Be the change you want to see in the world','',[35,27]);Game.Objects['You'].levelAchiev15=Game.last;
 						
 		//end of achievements
 		
