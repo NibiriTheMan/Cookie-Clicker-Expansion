@@ -13814,7 +13814,7 @@ Game.Launch=function()
 		Game.ProductionAchievement('Absolutely breathtaking','Sky citadel',1);
 		Game.ProductionAchievement('And where is all the fog?','Sky citadel',2);
 		Game.ProductionAchievement('Azul profundo','Sky citadel',3);
-		new Game.Achievement('Clarion skies','',[35,26]);Game.Objects['Sky citadel'].levelAchiev10=Game.last;
+		new Game.Achievement('Clarion skies','',[36,26]);Game.Objects['Sky citadel'].levelAchiev10=Game.last;
 
 		//end of achievements
 		
