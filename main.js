@@ -12402,7 +12402,6 @@ Game.Launch=function()
 		
 		order=10020;
 		Game.NewUpgradeCookie({name:'Deuterium cookies',desc:'Almost heavy enough to make it quite the ugly scene on your foot when you drop it.',icon:[21,37],power:						7,price: getCookiePrice(63)});
-		Game.NewUpgradeCookie({name:'Illusium cookies',desc:'You\'re losing your touch...',icon:[22,37],power:						7,price: getCookiePrice(64)});
 		
 		order=590;
 		Game.TieredUpgrade('Human labor','<q>Okay, but why were you doing this manually before?','Sky citadel',2);
