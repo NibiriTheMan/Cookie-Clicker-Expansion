@@ -13792,8 +13792,6 @@ Game.Launch=function()
 		order=1050;
 		new Game.Achievement('All on deck',loc("Have <b>%1</b>.",loc("%1 cursor",LBeautify(900))),[0,19]);
 		new Game.Achievement('A round of applause',loc("Have <b>%1</b>.",loc("%1 cursor",LBeautify(1000)))+'<q>Boy, are my arms tired!</q>',[0,28]);
-
-		//new Game.Achievement('Breathtaking','',[35,26]);Game.Objects['Sky citadel'].levelAchiev10=Game.last;
 		
 		order=1497;
 		Game.TieredAchievement('Salute the sun','','Sky citadel',1);
@@ -13811,6 +13809,12 @@ Game.Launch=function()
 		Game.TieredAchievement('Aerophile','','Sky citadel',13);
 		Game.TieredAchievement('Bit concerning the power cell is bright red, innit?','','Sky citadel',14);
 		Game.TieredAchievement('Next, we are going to steal the atmosphere','','Sky citadel',15);
+
+		order=1498;
+		Game.ProductionAchievement('Absolutely breathtaking','Sky citadel',1);
+		Game.ProductionAchievement('And where is all the fog?','Sky citadel',2);
+		Game.ProductionAchievement('Azul profundo','Sky citadel',3);
+		new Game.Achievement('Clarion skies','',[35,26]);Game.Objects['Sky citadel'].levelAchiev10=Game.last;
 
 		//end of achievements
 		
