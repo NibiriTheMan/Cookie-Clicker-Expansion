@@ -9033,6 +9033,7 @@ Game.Launch=function()
 			Game.UnlockTiered(this);
 			if (this.amount>=Game.SpecialGrandmaUnlock && Game.Objects['Grandma'].amount>0) Game.Unlock(this.grandma.name);
 		});
+		/* these have been hard disabled unfortunately because the game doesn't like the sky citadel's existence
 		Game.YouCustomizer={};
 		Game.YouCustomizer.render=function()
 		{
@@ -9314,7 +9315,8 @@ Game.Launch=function()
 			Game.YouCustomizer.render();
 			Game.YouCustomizer.renderPortrait();
 		}
-		
+		*/
+  
 		Game.foolObjects={
 			'Unknown':{name:'Investment',desc:'You\'re not sure what this does, you just know it means profit.',icon:0},
 			'Cursor':{name:'Rolling pin',desc:'Essential in flattening dough. The first step in cookie-making.',icon:0},
