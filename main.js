@@ -12425,7 +12425,8 @@ Game.Launch=function()
 		order=10300;
 		Game.NewUnshackleBuilding({building:'Sky citadel',q:'We all need a breath of fresh air.'});
 		Game.NewUnshackleUpgradeTier({tier:16,q:'Although kalathunzite is believed to be sweeter than even pure sucrose, it is also capable of immediately causing 3rd degree burns, especially in your mouth.'});
-		
+		Game.TieredUpgrade('Fortune #021','<q>Sometimes, you must envision yourself on a higher level before you can reach it.</q>','Sky citadel','fortune');
+	
 		//end of upgrades
 		
 		Game.seasons={
