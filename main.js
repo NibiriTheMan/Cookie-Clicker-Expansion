@@ -16812,7 +16812,7 @@ Game.Launch=function()
 					//make products full-opacity if we can buy them
 					var classes='product';
 					var price=me.bulkPrice;
-					if (Game.cookiesEarned>=me.basePrice || me.bought>0) {classes+=' unlocked';lastLocked=0;me.locked=0;if (me.id==19){Game.Win('Cookie Clicker');}} else {classes+=' locked';lastLocked++;me.locked=1;}
+					if (Game.cookiesEarned>=me.basePrice || me.bought>0) {classes+=' unlocked';lastLocked=0;me.locked=0;if (me.id==20){Game.Win('Cookie Clicker');}} else {classes+=' locked';lastLocked++;me.locked=1;}
 					if ((Game.buyMode==1 && Game.cookies>=price) || (Game.buyMode==-1 && me.amount>0)) classes+=' enabled'; else classes+=' disabled';
 					if (lastLocked>2) classes+=' toggledOff';
 					me.l.className=classes;
