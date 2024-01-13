@@ -46,6 +46,12 @@ M.launch=function()
 				company:'Wacky Reagants',
 				desc:'Salt is a versatile substance, with properties both mundane and mystical. This is why the bearded crackpots at <b>Wacky Reagants</b> have perfected the art of turning magic powder into salt, which is then sold to anyone promising to put it to good use - whether it be warding off banshees and ghouls or seasoning a Sunday roast.',
 			},
+			'Sky citadel':{
+				name:'Aerosol spray',
+				symbol:'AER',
+				company:'Oudoura & Co.',
+				desc:'There\'s no reason to bother working anywhere that will smell bad! Of course, that is what these are for. These can mask any smell, whether it be sweat, smoke, or rotting flesh, <b>Oudoura & Co.</b> will have you covered, and leave you stunned at the effectiveness their products will bring. Hell, people may want to start paying YOU to simply get a chance to work for you!. ',
+			},
 			'Shipment':{
 				name:'Vanilla',
 				symbol:'VNL',
