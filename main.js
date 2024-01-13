@@ -9374,7 +9374,7 @@ Game.Launch=function()
 			{
 				me.canvas=l('rowCanvas'+me.id);
 				me.ctx=me.canvas.getContext('2d',{alpha:false});
-				if (me.id==21)
+				if (me.id==20)
 				{
 					me.canvasAdd=l('rowCanvasAdd'+me.id);
 					me.ctxAdd=me.canvasAdd.getContext('2d');
