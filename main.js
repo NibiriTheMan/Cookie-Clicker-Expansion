@@ -4285,8 +4285,7 @@ Game.Launch=function()
 				//Game.BuildAscendTree();
 			}
 		}
-
-	Game.BuildAscendTree=function(justBought)
+		Game.BuildAscendTree=function(justBought)
 		{
 			var str='';
 			Game.heavenlyBounds={left:0,right:0,top:0,bottom:0};
@@ -4375,7 +4374,7 @@ Game.Launch=function()
 			
 			setTimeout(function(){Game.tooltip.shouldHide=true;},100);
 		}
-
+		
 		/*=====================================================================================
 		COALESCING SUGAR LUMPS
 		=======================================================================================*/
