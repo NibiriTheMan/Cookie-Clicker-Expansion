@@ -11700,7 +11700,7 @@ Game.Launch=function()
 		Game.NewUnshackleBuilding=function(obj)
 		{
 			var building=Game.Objects[obj.building];
-			var upgrade=new Game.Upgrade('Unshackled '+building.bplural,(obj.building=='Cursor'?getStrThousandFingersGain(25):loc("Tiered upgrades for <b>%1</b> provide an extra <b>+%2%</b> production.<br>Only works with unshackled upgrade tiers.",[cap(building.plural),Math.round((building.id==1?0.5:(20-building.id)*0.1)*100)]))+(EN?'<q>'+obj.q+'</q>':''),Math.pow(building.id+1,7)*15000000,[building.iconColumn,35]);
+			var upgrade=new Game.Upgrade('Unshackled '+building.bplural,(obj.building=='Cursor'?getStrThousandFingersGain(25):loc("Tiered upgrades for <b>%1</b> provide an extra <b>+%2%</b> production.<br>Only works with unshackled upgrade tiers.",[cap(building.plural),Math.round((building.id==1?0.5:(24-building.id)*0.1)*100)]))+(EN?'<q>'+obj.q+'</q>':''),Math.pow(building.id+1,7)*15000000,[building.iconColumn,35]);
 			upgrade.pool='prestige';
 			upgrade.parents=[obj.building=='Cursor'?'Unshackled flavor':Game.ObjectsById[building.id-1].unshackleUpgrade];
 			building.unshackleUpgrade=upgrade.name;
