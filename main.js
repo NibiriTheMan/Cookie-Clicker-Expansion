@@ -4286,7 +4286,7 @@ Game.Launch=function()
 			}
 		}
 
-		Game.BuildAscendTree=function(justBought)
+	Game.BuildAscendTree=function(justBought)
 		{
 			var str='';
 			Game.heavenlyBounds={left:0,right:0,top:0,bottom:0};
@@ -4321,6 +4321,7 @@ Game.Launch=function()
 			}
 			str+='<div class="crate upgrade heavenly enabled" style="position:absolute;left:-30px;top:-30px;opacity:0.8;pointer-events:none;transform:scale(1.3);background:transparent;"></div>';
 			str+='<div class="crateBox" style="filter:none;-webkit-filter:none;">';//chrome is still bad at these
+			for (var i in Game.PrestigeUpgrades)
 			{
 				var me=Game.PrestigeUpgrades[i];
 				
