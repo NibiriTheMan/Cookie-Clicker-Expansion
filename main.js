@@ -8239,7 +8239,7 @@ Game.Launch=function()
 			if (this.id==0) l('sectionLeftExtra').innerHTML=l('sectionLeftExtra').innerHTML+str;
 			else
 			{
-				if (this.id==19)
+				if (this.id==20)
 				{
 					str+='<canvas style="display:none;" width=64 height=64 id="rowCanvasAdd'+this.id+'"></canvas>';
 					str+='<a class="smallFancyButton framed onlyOnCanvas" style="position:absolute;z-index:10;left:8px;bottom:22px;" '+Game.clickStr+'="Game.YouCustomizer.prompt();PlaySound(\'snd/tick.mp3\');">'+loc("Customize")+'</a>';
