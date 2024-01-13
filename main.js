@@ -12424,6 +12424,7 @@ Game.Launch=function()
 		Game.SynergyUpgrade('Vermillion beakers','<q>We were already basically doing alchemy by doing this, so why not.</q>','Sky citadel','Alchemy lab','synergy2');
 		order=10300;
 		Game.NewUnshackleBuilding({building:'Sky citadel',q:'We all need a breath of fresh air.'});
+		Game.NewUnshackleUpgradeTier({tier:16,q:'Although it is believed to be sweeter than even pure sucrose, it is also capable of immediately causing 3rd degree burns, especially in your mouth.'});
 		
 		//end of upgrades
 		
