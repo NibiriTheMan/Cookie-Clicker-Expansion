@@ -9033,7 +9033,6 @@ Game.Launch=function()
 			Game.UnlockTiered(this);
 			if (this.amount>=Game.SpecialGrandmaUnlock && Game.Objects['Grandma'].amount>0) Game.Unlock(this.grandma.name);
 		});
-		/* these have been hard disabled unfortunately because the game doesn't like the sky citadel's existence
 		Game.YouCustomizer={};
 		Game.YouCustomizer.render=function()
 		{
@@ -9315,7 +9314,6 @@ Game.Launch=function()
 			Game.YouCustomizer.render();
 			Game.YouCustomizer.renderPortrait();
 		}
-		*/
   
 		Game.foolObjects={
 			'Unknown':{name:'Investment',desc:'You\'re not sure what this does, you just know it means profit.',icon:0},
@@ -9376,7 +9374,7 @@ Game.Launch=function()
 			{
 				me.canvas=l('rowCanvas'+me.id);
 				me.ctx=me.canvas.getContext('2d',{alpha:false});
-				if (me.id==19)
+				if (me.id==20)
 				{
 					me.canvasAdd=l('rowCanvasAdd'+me.id);
 					me.ctxAdd=me.canvasAdd.getContext('2d');
