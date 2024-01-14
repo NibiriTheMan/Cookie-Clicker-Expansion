@@ -3551,8 +3551,8 @@ AddLanguage('EN','english',{
 	"[Achievement name 676]Chromatose": "Chromatose",
 	"[Achievement name 677]Genetically probable": "Genetically probable",
 	"[Achievement name 678]Deeper and deeper and deeper and deeper and deeper and deeper and deeper and deeper and": "Deeper and deeper and deeper and deeper and deeper and deeper and deeper and deeper and",
-	"[Achievement name 679]Outsourcing": "At the edge of death",
-	"[Achievement name 680]You could get lost in these": "At the edge of death",
+	"[Achievement name 679]Outsourcing": "Outsourcing",
+	"[Achievement name 680]You could get lost in these": "You could get lost in these",
 	"[Achievement name 681]Or so you thought": "Or so you thought",
 	"[Achievement name 682]Be the change you want to see in the world": "Be the change you want to see in the world"
 });
