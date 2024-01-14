@@ -4698,6 +4698,7 @@ Game.Launch=function()
 			if (Game.Has('Miraculite mouse')) add+=Game.cookiesPs*0.01;
 			if (Game.Has('Aetherice mouse')) add+=Game.cookiesPs*0.01;
 			if (Game.Has('Omniplast mouse')) add+=Game.cookiesPs*0.01;
+			if (Game.Has('Bubblium mouse')) add+=Game.cookiesPs*0.01;
 			
 			if (Game.Has('Fortune #104')) add+=Game.cookiesPs*0.01;
 			var mult=1;
