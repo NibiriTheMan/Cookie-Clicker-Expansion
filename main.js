@@ -12415,7 +12415,27 @@ Game.Launch=function()
 		Game.NewUnshackleUpgradeTier({tier:16,q:'Although kalathunzite is believed to be sweeter than even pure sucrose, it is also capable of immediately causing 3rd degree burns, especially in your mouth.'});
 		order=19001;
 		Game.TieredUpgrade('Fortune #021','<q>Sometimes, you must envision yourself on a higher level before you can reach it.</q>','Sky citadel','fortune');
-	
+
+		order=200;Game.TieredUpgrade('Nanny cams','<q>Complete surveilance is never a bad idea, especially with how the elderly will always find ways to cause death to either themselves or others. Just remember to ignore the at least 80 books written about why complete surveilance is a bad idea.</q>','Grandma',16);
+		order=400;Game.TieredUpgrade('Heat shields','<q>Hey, look! Equipment can be sent down to the inner core of the earth without immediately melting due to the insane heat! Oh, what joy!</q>','Mine',16);
+		order=500;Game.TieredUpgrade('Graphene reinforcement','<q>Although your factories do not tend to fall, some precautions need to be made anyways. Some people may call this overkill, but we say they\'re crazy!</q>','Factory',16);
+		order=525;Game.TieredUpgrade('Cookie laundering','<q>This is supposedly """illegal""" but it\'s nothing your lawyers can\'t fix.</q>','Bank',16);
+		order=550;Game.TieredUpgrade('Self-idolatry','<q>After all, there\'s no greater force than your own cookie empire.</q>','Temple',15);
+		order=575;Game.TieredUpgrade('Speech therapy','<q>After so much spell casting, some of your wizards will ocasionally completely forget how to speak in anything OTHER than ancient primordial curses.</q>','Wizard tower',16);
+		order=590;Game.TieredUpgrade('Cookie balloons','<q>In hindsight, this is like using paper to build a house. Whatever.</q>','Sky citadel',16);
+		order=600;Game.TieredUpgrade('Breaking the light barrier','<q>So fast, that sometimes a delivery will have even been made before you even knew you wanted to order it!.</q>','Shipment',16);
+		order=700;Game.TieredUpgrade('Extremely strict lab precautions','<q>Here\'s some advice the lab boys gave me: DO NOT come into contact with nor ingest any of the materials being transformed.</q>','Alchemy lab',16);
+		order=800;Game.TieredUpgrade('A way home','<q>You started this whole cookie venture on the simple kitchen counters of your own home. Your industrial and research facilities, sadly, have long since outgrown the confines of the little house, but you always knew it was still in there, buried somewhere. With a targeted portal, you could, conceivably, pay it a little visit for old times\' sake...</q>','Portal',16);
+		order=900;Game.TieredUpgrade('Rectifying a mistake','<q>This whole time-travelling business has been a terrible mess and, frankly, far more trouble than was worth. It\'s decided: you\'ll hop in one of your time machines one last time, turn back the clock, knock on the door of your younger self and make a stern but convincing case against starting this entire nonsense in the first place. Oh hey, is someone at the door?</q>','Time machine',16);
+		order=1000;Game.TieredUpgrade('Candied atoms','<q>You know what, just eat the suckers, yeah?</q>','Antimatter condenser',16);
+		order=1100;Game.TieredUpgrade('Lab goggles but like cool shades','<q>Mandatory equipment in your prismatic labs, and dashingly stylish at that. A smidge safer than just squinting at the twinkly things.</q>','Prism',16);
+		order=1200;Game.TieredUpgrade('Gambler\'s fallacy fallacy','<q>Yes, just because you\'ve been on a losing streak doesn\'t mean the next one is bound to be the win you\'ve been hoping for, but then again, it doesn\'t statistically have less of a chance either, does it now?</q>','Chancemaker',16);
+		order=1300;Game.TieredUpgrade('The more they stay the same','<q>Exhausted by your fractals department and its obsession with self-similarity, you\'ve decided to take a break and seek things in life entirely disconnected from any other; alas! You find the task impossible, for all things in this world relate to all others - in each cookie, the structure of the universe; in each person, their fellow man. Cor blimey, you can\'t even look at broccoli in peace.</q>','Fractal engine',16);
+		order=1400;Game.TieredUpgrade('Simulation failsafes','<q>Oh, for pete\'s sake, you bit into a cookie and it gave you a runtime error. You\'ve been trapped in the old matrix gambit again! Time to shut everything down and prepare for extraction into what is hopefully the real layer of reality where learning kung-fu takes time and the biscuits don\'t throw memory overflow exceptions.</q>','Javascript console',16);
+		order=1500;Game.TieredUpgrade('The other routes to Rome','<q>Did you know every idleverse follows its own path of sequential buildings, sometimes quite dissimilar to our own? Grandpas, wind turbines, through the power of music, friendship, or legislation; those folks in there discovered ways to make cookies out of any random venue. Some of them don\'t even have idleverses, can you imagine?</q>','Idleverse',16);
+		order=1600;Game.TieredUpgrade('Intellectual property theft','<q>Okay, you\'ll admit you\'re maybe starting to run out of new baking recipes. But what if... you were to pilfer your cortex bakers for ideas and disguise them as your own cookies? Delightfully devilish!</q>','Cortex baker',16);
+		order=1700;Game.TieredUpgrade('Reading your clones bedtime stories','<q>I don\'t know, they seem to like it.</q>','You',16);
+		
 		//end of upgrades
 		
 		Game.seasons={
