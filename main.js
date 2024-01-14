@@ -12384,7 +12384,7 @@ Game.Launch=function()
 		order=100;new Game.Upgrade('Duodecillion fingers',getStrThousandFingersGain(20)+'<q>Congratulations.<br>You\'ve mastered the core mechanic of the game.</q>',10000000000000000000000000000000000,[12,37]);Game.MakeTiered(Game.last,16,0);
 		order=300;Game.TieredUpgrade('Hyper-ionized soil','<q>Side effects as a result of consumption of the resulting crops may include:<br>Death.</q>','Farm',16);
 		
-		order=590;Game.TieredUpgrade('Darker red','<q>More darkness, more absorption.','Sky citadel',1);
+		order=590;Game.TieredUpgrade('Darker red','<q>More darkness, more absorption.</q>','Sky citadel',1);
 		
 		order=250;Game.GrandmaSynergy('Foggy grandmas','A nice grandma to... uh... Huh, can\'t seem to remember.','Sky citadel');
 		
