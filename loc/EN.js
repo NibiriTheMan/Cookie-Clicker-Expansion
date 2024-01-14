@@ -3539,7 +3539,7 @@ AddLanguage('EN','english',{
 	"[Achievement name 664]Biggering": "Biggering",
 	"[Achievement name 665]Desecrating the mantle": "Desecrating the mantle",
 	"[Achievement name 666]Copyright abuse": "Copyright abuse",
-	"[Achievement name 667]Economical boom": "At the edge of death",
+	"[Achievement name 667]Economical boom": "Economical boom",
 	"[Achievement name 668]It\'s not the years, honey, it\'s the mileage": "It\'s not the years, honey, it\'s the mileage",
 	"[Achievement name 669]Lapsus linguae": "Lapsus linguae",
 	"[Achievement name 670]When you stare at the sun, it stares back": "When you stare at the sun, it stares back",
