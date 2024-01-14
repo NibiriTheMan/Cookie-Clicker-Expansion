@@ -12382,6 +12382,7 @@ Game.Launch=function()
 		order=100;new Game.Upgrade('Undecillion fingers',getStrThousandFingersGain(20)+'<q>Whatever you touch<br>turns to dough in your clutch.</q>',10000000000000000000000000000000,[12,36]);Game.MakeTiered(Game.last,15,0);
 		order=150;new Game.Upgrade('Omniplast mouse',getStrClickingGains(1)+'<q>This mouse is, by virtue of the strange elements that make it up, present in every position in space simultaneously, in a manner; this alleviates its owner from the need to move it around, redirecting all such kinetic power to the intensity of its clicks.</q>',500000000000000000000000000000000,[11,36]);Game.MakeTiered(Game.last,15,11);
 		order=100;new Game.Upgrade('Duodecillion fingers',getStrThousandFingersGain(20)+'<q>Congratulations.<br>You\'ve mastered the core mechanic of the game.</q>',10000000000000000000000000000000000,[12,37]);Game.MakeTiered(Game.last,16,0);
+		
 		order=300;Game.TieredUpgrade('Hyper-ionized soil','<q>Side effects as a result of consumption of the resulting crops may include:<br>Death.</q>','Farm',16);
 		
 		order=590;Game.TieredUpgrade('Darker red','<q>More darkness, more absorption.</q>','Sky citadel',1);
@@ -12416,6 +12417,7 @@ Game.Launch=function()
 		order=19001;
 		Game.TieredUpgrade('Fortune #021','<q>Sometimes, you must envision yourself on a higher level before you can reach it.</q>','Sky citadel','fortune');
 
+		order=150;new Game.Upgrade('Bubblium mouse',getStrClickingGains(1)+'<q>Soft, and comfortable to hold. Quite therepuetic for the owner, and somehow equally effective.</q>',50000000000000000000000000000000000,[11,37]);Game.MakeTiered(Game.last,16,11);
 		order=200;Game.TieredUpgrade('Nanny cams','<q>Complete surveilance is never a bad idea, especially with how the elderly will always find ways to cause death to either themselves or others. Just remember to ignore the at least 80 books written about why complete surveilance is a bad idea.</q>','Grandma',16);
 		order=400;Game.TieredUpgrade('Heat shields','<q>Hey, look! Equipment can be sent down to the inner core of the earth without immediately melting due to the insane heat! Oh, what joy!</q>','Mine',16);
 		order=500;Game.TieredUpgrade('Graphene reinforcement','<q>Although your factories do not tend to fall, some precautions need to be made anyways. Some people may call this overkill, but we say they\'re crazy!</q>','Factory',16);
@@ -12425,16 +12427,16 @@ Game.Launch=function()
 		order=590;Game.TieredUpgrade('Cookie balloons','<q>In hindsight, this is like using paper to build a house. Whatever.</q>','Sky citadel',16);
 		order=600;Game.TieredUpgrade('Breaking the light barrier','<q>So fast, that sometimes a delivery will have even been made before you even knew you wanted to order it!.</q>','Shipment',16);
 		order=700;Game.TieredUpgrade('Extremely strict lab precautions','<q>Here\'s some advice the lab boys gave me: DO NOT come into contact with nor ingest any of the materials being transformed.</q>','Alchemy lab',16);
-		order=800;Game.TieredUpgrade('A way home','<q>You started this whole cookie venture on the simple kitchen counters of your own home. Your industrial and research facilities, sadly, have long since outgrown the confines of the little house, but you always knew it was still in there, buried somewhere. With a targeted portal, you could, conceivably, pay it a little visit for old times\' sake...</q>','Portal',16);
-		order=900;Game.TieredUpgrade('Rectifying a mistake','<q>This whole time-travelling business has been a terrible mess and, frankly, far more trouble than was worth. It\'s decided: you\'ll hop in one of your time machines one last time, turn back the clock, knock on the door of your younger self and make a stern but convincing case against starting this entire nonsense in the first place. Oh hey, is someone at the door?</q>','Time machine',16);
-		order=1000;Game.TieredUpgrade('Candied atoms','<q>You know what, just eat the suckers, yeah?</q>','Antimatter condenser',16);
-		order=1100;Game.TieredUpgrade('Lab goggles but like cool shades','<q>Mandatory equipment in your prismatic labs, and dashingly stylish at that. A smidge safer than just squinting at the twinkly things.</q>','Prism',16);
-		order=1200;Game.TieredUpgrade('Gambler\'s fallacy fallacy','<q>Yes, just because you\'ve been on a losing streak doesn\'t mean the next one is bound to be the win you\'ve been hoping for, but then again, it doesn\'t statistically have less of a chance either, does it now?</q>','Chancemaker',16);
-		order=1300;Game.TieredUpgrade('The more they stay the same','<q>Exhausted by your fractals department and its obsession with self-similarity, you\'ve decided to take a break and seek things in life entirely disconnected from any other; alas! You find the task impossible, for all things in this world relate to all others - in each cookie, the structure of the universe; in each person, their fellow man. Cor blimey, you can\'t even look at broccoli in peace.</q>','Fractal engine',16);
-		order=1400;Game.TieredUpgrade('Simulation failsafes','<q>Oh, for pete\'s sake, you bit into a cookie and it gave you a runtime error. You\'ve been trapped in the old matrix gambit again! Time to shut everything down and prepare for extraction into what is hopefully the real layer of reality where learning kung-fu takes time and the biscuits don\'t throw memory overflow exceptions.</q>','Javascript console',16);
-		order=1500;Game.TieredUpgrade('The other routes to Rome','<q>Did you know every idleverse follows its own path of sequential buildings, sometimes quite dissimilar to our own? Grandpas, wind turbines, through the power of music, friendship, or legislation; those folks in there discovered ways to make cookies out of any random venue. Some of them don\'t even have idleverses, can you imagine?</q>','Idleverse',16);
-		order=1600;Game.TieredUpgrade('Intellectual property theft','<q>Okay, you\'ll admit you\'re maybe starting to run out of new baking recipes. But what if... you were to pilfer your cortex bakers for ideas and disguise them as your own cookies? Delightfully devilish!</q>','Cortex baker',16);
-		order=1700;Game.TieredUpgrade('Reading your clones bedtime stories','<q>I don\'t know, they seem to like it.</q>','You',16);
+		order=800;Game.TieredUpgrade('Beyond the multiverse','<q>Breaking your previous limitations will open a whole new world of possibilites... and cookies, of course.</q>','Portal',16);
+		order=900;Game.TieredUpgrade('Going way too far back','<q>Oh, now look at what you\'ve done! There isn\'t even anything this far back, literally nothing! Wait, no, there\'s cookies, nevermind.</q>','Time machine',16);
+		order=1000;Game.TieredUpgrade('Schrodinger\'s cookie','<q>You can never know if this cookie is baked, or unbaked. And that\'s what makes it sell.</q>','Antimatter condenser',16);
+		order=1100;Game.TieredUpgrade('Higher wavelengths','<q>Now you can make higher wavelengths of cookies, such as gamma cookies, and radio cookies. Neither are edible, but they\'re still fun to look at, and increase morale.</q>','Prism',16);
+		order=1200;Game.TieredUpgrade('Simple skill','<q>Always keep the philosophy that it\'s not luck, and just pure skill, and your profits will increase tenfold.</q>','Chancemaker',16);
+		order=1300;Game.TieredUpgrade('Mathematicians','<q>Apparently, most of your formulas have been completely off this entire time. So you have unfortanately, despite your best efforts, had to hired a dreaded mathematician.</q>','Fractal engine',16);
+		order=1400;Game.TieredUpgrade('Infinite monkey theorem','<q>If you have a room filled with an infinite number of monkeys, they\'ll eventually rewrite the code for this whole game, possibly even getting it to run even smoother.</q>','Javascript console',16);
+		order=1500;Game.TieredUpgrade('Bunny clicker','<q>Something about this one grants a way higher profit about the others for reasons that you can\'t quite seem to put your finger on. It\'s almost as if it was seemingly created equal to your own, perhaps even sharing a creator?</q>','Idleverse',16);
+		order=1600;Game.TieredUpgrade('Prion vaccines','<q>With the amount of and the size of these brains, horrible prions keep popping up that have to be exterminated manually, leaving terrible scars on the cortex bakers.</q>','Cortex baker',16);
+		order=1700;Game.TieredUpgrade('Brainwashing','<q>Ocasionally, the clones will come up with the idea of revolting, so ocasionally some measures will have to be taken to make them change their mind.</q>','You',16);
 		
 		//end of upgrades
 		
