@@ -13834,6 +13834,7 @@ Game.Launch=function()
 		for (var i in Game.Objects)
 		{
 			if (Game.Objects[i].levelAchiev10) {Game.Objects[i].levelAchiev10.baseDesc=loc("Reach level <b>%1</b> %2.",[10,Game.Objects[i].plural]);Game.Objects[i].levelAchiev10.desc=Game.Objects[i].levelAchiev10.baseDesc;}
+			if (Game.Objects[i].levelAchiev15) {Game.Objects[i].levelAchiev15.baseDesc=loc("Reach level <b>%1</b> %2.",[15,Game.Objects[i].plural]);Game.Objects[i].levelAchiev15.desc=Game.Objects[i].levelAchiev15.baseDesc;}
 		}
 		
 		
