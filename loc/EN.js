@@ -3514,45 +3514,45 @@ AddLanguage('EN','english',{
 	"[Achievement name 639]Cookie Clicker": "Cookie Clicker",
 	"[Achievement name 640]What's not clicking": "What's not clicking",
 	"[Achievement name 641]All on deck": "All on deck",
-	"[Achievement name 642]A round of applause": "A round of applause"
-	"[Achievement name 643]Salute the sun": "Salute the sun"
-	"[Achievement name 644]The power of ultraviolet": "The power of ultraviolet"
-	"[Achievement name 645]To the exosphere, and beyond": "To the exosphere, and beyond"
-	"[Achievement name 646]Daybreak": "Daybreak"
-	"[Achievement name 647]Environmental disaster": "Environmental disaster"
-	"[Achievement name 648]It\'s suffocating": "It\'s suffocating"
-	"[Achievement name 649]Head in the clouds": "Head in the clouds"
-	"[Achievement name 650]Cloud nine": "Cloud nine"
-	"[Achievement name 651]Get off your high horse": "Get off your high horse"
-	"[Achievement name 652]Background microwave radiation": "Background microwave radiation"
-	"[Achievement name 653]Judging by the hole in the satellite picture": "Judging by the hole in the satellite picture"
-	"[Achievement name 654]The good, the bad, and the tall": "The good, the bad, and the tall"
-	"[Achievement name 655]Aerophile": "Aerophile"
-	"[Achievement name 656]Bit concerning the power cell is bright red, innit?": "Bit concerning the power cell is bright red, innit?"
-	"[Achievement name 657]Next, we are going to steal the atmosphere": "Next, we are going to steal the atmosphere"
-	"[Achievement name 658]Absolutely breathtaking": "Absolutely breathtaking"
-	"[Achievement name 659]And where is all the fog?": "And where is all the fog?"
-	"[Achievement name 660]Azul profundo": "Azul profundo"
-	"[Achievement name 661]Clarion skies": "Clarion skies"
-	"[Achievement name 662]Abhorrent abomination": "Abhorrent abomination"
-	"[Achievement name 663]At the edge of death": "At the edge of death"
-	"[Achievement name 664]Biggering": "Biggering"
-	"[Achievement name 665]Desecrating the mantle": "Desecrating the mantle"
-	"[Achievement name 666]Copyright abuse": "Copyright abuse"
-	"[Achievement name 667]Economical boom": "At the edge of death"
-	"[Achievement name 668]It\'s not the years, honey, it\'s the mileage": "It\'s not the years, honey, it\'s the mileage"
-	"[Achievement name 669]Lapsus linguae": "Lapsus linguae"
-	"[Achievement name 670]When you stare at the sun, it stares back": "When you stare at the sun, it stares back"
-	"[Achievement name 671]If it\'s not on a map, it doesn\'t exist": "If it\'s not on a map, it doesn\'t exist"
-	"[Achievement name 672]Quicksilver": "Quicksilver"
-	"[Achievement name 673]Mr. Mandela": "Mr. Mandela"
-	"[Achievement name 674]Time is relative": "Time is relative"
-	"[Achievement name 675]Superposition (with style)": "Superposition (with style)"
-	"[Achievement name 676]Chromatose": "Chromatose"
-	"[Achievement name 677]Genetically probable": "Genetically probable"
-	"[Achievement name 678]Deeper and deeper and deeper and deeper and deeper and deeper and deeper and deeper and": "Deeper and deeper and deeper and deeper and deeper and deeper and deeper and deeper and"
-	"[Achievement name 679]Outsourcing": "At the edge of death"
-	"[Achievement name 680]You could get lost in these": "At the edge of death"
-	"[Achievement name 681]Or so you thought": "Or so you thought"
+	"[Achievement name 642]A round of applause": "A round of applause",
+	"[Achievement name 643]Salute the sun": "Salute the sun",
+	"[Achievement name 644]The power of ultraviolet": "The power of ultraviolet",
+	"[Achievement name 645]To the exosphere, and beyond": "To the exosphere, and beyond",
+	"[Achievement name 646]Daybreak": "Daybreak",
+	"[Achievement name 647]Environmental disaster": "Environmental disaster",
+	"[Achievement name 648]It\'s suffocating": "It\'s suffocating",
+	"[Achievement name 649]Head in the clouds": "Head in the clouds",
+	"[Achievement name 650]Cloud nine": "Cloud nine",
+	"[Achievement name 651]Get off your high horse": "Get off your high horse",
+	"[Achievement name 652]Background microwave radiation": "Background microwave radiation",
+	"[Achievement name 653]Judging by the hole in the satellite picture": "Judging by the hole in the satellite picture",
+	"[Achievement name 654]The good, the bad, and the tall": "The good, the bad, and the tall",
+	"[Achievement name 655]Aerophile": "Aerophile",
+	"[Achievement name 656]Bit concerning the power cell is bright red, innit?": "Bit concerning the power cell is bright red, innit?",
+	"[Achievement name 657]Next, we are going to steal the atmosphere": "Next, we are going to steal the atmosphere",
+	"[Achievement name 658]Absolutely breathtaking": "Absolutely breathtaking",
+	"[Achievement name 659]And where is all the fog?": "And where is all the fog?",
+	"[Achievement name 660]Azul profundo": "Azul profundo",
+	"[Achievement name 661]Clarion skies": "Clarion skies",
+	"[Achievement name 662]Abhorrent abomination": "Abhorrent abomination",
+	"[Achievement name 663]At the edge of death": "At the edge of death",
+	"[Achievement name 664]Biggering": "Biggering",
+	"[Achievement name 665]Desecrating the mantle": "Desecrating the mantle",
+	"[Achievement name 666]Copyright abuse": "Copyright abuse",
+	"[Achievement name 667]Economical boom": "At the edge of death",
+	"[Achievement name 668]It\'s not the years, honey, it\'s the mileage": "It\'s not the years, honey, it\'s the mileage",
+	"[Achievement name 669]Lapsus linguae": "Lapsus linguae",
+	"[Achievement name 670]When you stare at the sun, it stares back": "When you stare at the sun, it stares back",
+	"[Achievement name 671]If it\'s not on a map, it doesn\'t exist": "If it\'s not on a map, it doesn\'t exist",
+	"[Achievement name 672]Quicksilver": "Quicksilver",
+	"[Achievement name 673]Mr. Mandela": "Mr. Mandela",
+	"[Achievement name 674]Time is relative": "Time is relative",
+	"[Achievement name 675]Superposition (with style)": "Superposition (with style)",
+	"[Achievement name 676]Chromatose": "Chromatose",
+	"[Achievement name 677]Genetically probable": "Genetically probable",
+	"[Achievement name 678]Deeper and deeper and deeper and deeper and deeper and deeper and deeper and deeper and": "Deeper and deeper and deeper and deeper and deeper and deeper and deeper and deeper and",
+	"[Achievement name 679]Outsourcing": "At the edge of death",
+	"[Achievement name 680]You could get lost in these": "At the edge of death",
+	"[Achievement name 681]Or so you thought": "Or so you thought",
 	"[Achievement name 682]Be the change you want to see in the world": "Be the change you want to see in the world"
 });
