@@ -16593,7 +16593,7 @@ Game.Launch=function()
 				if (Game.handmadeCookies>=1000000000000000000000000000) {Game.Win('Clickety split');Game.Unlock('Miraculite mouse');}
 				if (Game.handmadeCookies>=100000000000000000000000000000) {Game.Win('Ain\'t that a click in the head');Game.Unlock('Aetherice mouse');}
 				if (Game.handmadeCookies>=10000000000000000000000000000000) {Game.Win('What\'s not clicking');Game.Unlock('Omniplast mouse');}
-				if (Game.handmadeCookies>=100000000000000000000000000000000) {Game.Win('Alas, no room will ever be made for a rat');Game.Unlock('Bubblium mouse');}
+				if (Game.handmadeCookies>=1000000000000000000000000000000000) {Game.Win('Alas, no room will ever be made for a rat');Game.Unlock('Bubblium mouse');}
 				
 				if (Game.cookiesEarned<Game.cookies) Game.Win('Cheated cookies taste awful');
 				
