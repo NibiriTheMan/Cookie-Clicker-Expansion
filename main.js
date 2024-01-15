@@ -16346,6 +16346,7 @@ Game.Launch=function()
 			if (Game.milkProgress>=12) Game.Unlock('Kitten executives');
 			if (Game.milkProgress>=13) Game.Unlock('Kitten admins');
 			if (Game.milkProgress>=14) Game.Unlock('Kitten strategists');
+			if (Game.milkProgress>=15) Game.Unlock('Kitten assassins');
 			Game.milkH=Math.min(1,Game.milkProgress)*0.35;
 			Game.milkHd+=(Game.milkH-Game.milkHd)*0.02;
 			
