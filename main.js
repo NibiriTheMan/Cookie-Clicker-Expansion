@@ -13853,7 +13853,30 @@ Game.Launch=function()
 		order=2420;new Game.Achievement('You could get lost in these','',[33,27]);Game.Objects['Idleverse'].levelAchiev15=Game.last;
 		order=2520;new Game.Achievement('Or so you thought','',[34,27]);Game.Objects['Cortex baker'].levelAchiev15=Game.last;
 		order=2620;new Game.Achievement('Be the change you want to see in the world','',[35,27]);Game.Objects['You'].levelAchiev15=Game.last;
-						
+
+		order=1000;new Game.Achievement('Alas, no room will ever be made for a rat',loc("Make <b>%1</b> from clicking.",loc("%1 cookie",LBeautify(1e29))),[11,36]);
+
+		order=1100;Game.TieredAchievement('These wrinkles can\'t hold me back','','Grandma',16);
+		order=1200;Game.TieredAchievement('Whole grained success','','Farm',16);
+		order=1300;Game.TieredAchievement('Nothing left to discover','','Mine',16);
+		order=1400;Game.TieredAchievement('Your very own automated empire','','Factory',16);
+		order=1425;Game.TieredAchievement('And the rich get even richer','','Bank',16);
+		order=1450;Game.TieredAchievement('ᚪᛚᛚ ᚣᚩᚢ\'ᛚᛚ ᛖᚠᛖᚱ ᚾᛖᛖᛞ','','Temple',16);
+		order=1475;Game.TieredAchievement('Can you spell it?','','Wizard tower',16);
+		order=1497;Game.TieredAchievement('Tall enough for me','','Sky citadel',16);
+		order=1500;Game.TieredAchievement('If you can\'t beat \'em, ship \'em','q>Or, alternatively, eat them.</q>','Shipment',16);
+		order=1600;Game.TieredAchievement('Sometimes, you DON\'T want to know how it\'s made','<q>Especially hot dogs.</q>','Alchemy lab',16);
+		order=1700;Game.TieredAchievement('Into the flourpus','','Portal',16);
+		order=1800;Game.TieredAchievement('The then is now now','<q>But we\'re not sure about the later.</q>','Time machine',16);
+		order=1900;Game.TieredAchievement('Does it really matter?','','Antimatter condenser',16);
+		order=2000;Game.TieredAchievement('Mantis shrimp vision','<q>.</q>','Prism',16);
+		order=2100;Game.TieredAchievement('I like those odds','','Chancemaker',16);
+		order=2200;Game.TieredAchievement('The definition of insanity is doing the same thing over and over again','<q>And YOU, my good sir, under this very definition, must be insane..</q>','Fractal engine',16);
+		order=2300;Game.TieredAchievement('console.log(Game.cookies)','','Javascript console',16);
+		order=2400;Game.TieredAchievement('You are alone in this idleverse','','Idleverse',16);
+		order=2500;Game.TieredAchievement('You know, I\'ve been thinking','','Cortex baker',16);
+		order=2600;Game.TieredAchievement('Lotsa me','','You',16);
+		
 		//end of achievements
 		
 		
