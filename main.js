@@ -5041,6 +5041,7 @@ Game.Launch=function()
 			if (Game.Has('Kitten executives')) catMult*=(1+Game.milkProgress*0.115*milkMult);
 			if (Game.Has('Kitten admins')) catMult*=(1+Game.milkProgress*0.11*milkMult);
 			if (Game.Has('Kitten strategists')) catMult*=(1+Game.milkProgress*0.105*milkMult);
+			if (Game.Has('Kitten assassins')) catMult*=(1+Game.milkProgress*0.1025*milkMult);
 			if (Game.Has('Kitten angels')) catMult*=(1+Game.milkProgress*0.1*milkMult);
 			if (Game.Has('Fortune #103')) catMult*=(1+Game.milkProgress*0.05*milkMult);
 			
