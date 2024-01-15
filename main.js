@@ -12438,6 +12438,7 @@ Game.Launch=function()
 		order=1500;Game.TieredUpgrade('Bunny clicker','<q>Something about this one grants a way higher profit about the others for reasons that you can\'t quite seem to put your finger on. It\'s almost as if it was seemingly created equal to your own, perhaps even sharing a creator?</q>','Idleverse',16);
 		order=1600;Game.TieredUpgrade('Prion vaccines','<q>With the amount of and the size of these brains, horrible prions keep popping up that have to be exterminated manually, leaving terrible scars on the cortex bakers.</q>','Cortex baker',16);
 		order=1700;Game.TieredUpgrade('Brainwashing','<q>Ocasionally, the clones will come up with the idea of revolting, so ocasionally some measures will have to be taken to make them change their mind.</q>','You',16);
+		order=20000;new Game.Upgrade('Kitten assassins',strKittenDesc+'<q>we can level the competition any day for you, sir</q>',900000000000000000000000000000000000000000000000000000,Game.GetIcon('Kitten',16));Game.last.kitten=1;Game.MakeTiered(Game.last,16,18);
 		
 		//end of upgrades
 		
