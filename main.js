@@ -13854,7 +13854,8 @@ Game.Launch=function()
 		order=2520;new Game.Achievement('Or so you thought','',[34,27]);Game.Objects['Cortex baker'].levelAchiev15=Game.last;
 		order=2620;new Game.Achievement('Be the change you want to see in the world','',[35,27]);Game.Objects['You'].levelAchiev15=Game.last;
 
-		order=1000;new Game.Achievement('Alas, no room will ever be made for a rat',loc("Make <b>%1</b> from clicking.",loc("%1 cookie",LBeautify(1e33))),[11,37]);
+		order=1000;
+		new Game.Achievement('Alas, no room will ever be made for a rat',loc("Make <b>%1</b> from clicking.",loc("%1 cookie",LBeautify(1e33))),[11,37]);
 
 		order=1100;Game.TieredAchievement('These wrinkles can\'t hold me back','','Grandma',16);
 		order=1200;Game.TieredAchievement('Whole grained success','','Farm',16);
@@ -13876,6 +13877,11 @@ Game.Launch=function()
 		order=2400;Game.TieredAchievement('You are alone in this idleverse','','Idleverse',16);
 		order=2500;Game.TieredAchievement('You know, I\'ve been thinking','','Cortex baker',16);
 		order=2600;Game.TieredAchievement('Lotsa me','','You',16);
+
+		order=7002;
+		new Game.Achievement('Septcentennial and a half',loc("Have at least <b>%1 of everything</b>.",750)+'<q>How did you even get here?</q>',[30,36]);
+		new Game.Achievement('Octcentennial',loc("Have at least <b>%1 of everything</b>.",800)+'<q>And then the wolves came.</q>',[29,37]);
+		new Game.Achievement('Zealous architect',loc("Have at least <b>%1 of everything</b>.",1500)+'<q>You need therapy.</q>',[31,36]);
 		
 		//end of achievements
 		
