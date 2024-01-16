@@ -12414,9 +12414,11 @@ Game.Launch=function()
 		order=5000;
 		Game.SynergyUpgrade('Wizard workers','<q>These are kind of like towers, I\'m sure they\'ll feel right at home.</q>','Sky citadel','Wizard tower','synergy1');
 		Game.SynergyUpgrade('Vermillion beakers','<q>We were already basically doing alchemy by doing this, so why not.</q>','Sky citadel','Alchemy lab','synergy2');
+		
 		order=10300;
 		Game.NewUnshackleBuilding({building:'Sky citadel',q:'We all need a breath of fresh air.'});
 		Game.NewUnshackleUpgradeTier({tier:16,q:'Although kalathunzite is believed to be sweeter than even pure sucrose, it is also capable of immediately causing 3rd degree burns, especially in your mouth.'});
+		
 		order=19001;
 		Game.TieredUpgrade('Fortune #021','<q>Sometimes, you must envision yourself on a higher level before you can reach it.</q>','Sky citadel','fortune');
 
@@ -12441,6 +12443,10 @@ Game.Launch=function()
 		order=1600;Game.TieredUpgrade('Prion vaccines','<q>With the amount of and the size of these brains, horrible prions keep popping up that have to be exterminated manually, leaving terrible scars on the cortex bakers.</q>','Cortex baker',16);
 		order=1700;Game.TieredUpgrade('Brainwashing','<q>Ocasionally, the clones will come up with the idea of revolting, so ocasionally some measures will have to be taken to make them change their mind.</q>','You',16);
 		order=20000;new Game.Upgrade('Kitten assassins',strKittenDesc+'<q>we can level the competition for you any day, sir</q>',900000000000000000000000000000000000000000000000000000,Game.GetIcon('Kitten',16));Game.last.kitten=1;Game.MakeTiered(Game.last,16,18);
+		
+		order=10300;
+		Game.NewUpgradeCookie({name:'Plain biscuit',desc:'Rewarded for owning 750 of everything.<br>What a let down! Whoever sent you this should be fired.',icon:[22,37],power:	10,price: 999999999999999999999999999999999999999999999999999999999999*butterBiscuitMult,locked:1});
+		Game.NewUpgradeCookie({name:'Prismatic biscuit',desc:'Rewarded for owning 800 of everything.<br>One cannot describe the flavor of a biscuit such as this. Nearly every flavor imaginable has been mixed together into this work of art, and as such it displays a variety of beautiful colors.',icon:[23,37],power:	10,price: 999999999999999999999999999999999999999999999999999999999999999*butterBiscuitMult,locked:1});
 		
 		//end of upgrades
 		
@@ -13881,7 +13887,7 @@ Game.Launch=function()
 		order=7002;
 		new Game.Achievement('Septcentennial and a half',loc("Have at least <b>%1 of everything</b>.",750)+'<q>How did you even get here?</q>',[30,36]);
 		new Game.Achievement('Octcentennial',loc("Have at least <b>%1 of everything</b>.",800)+'<q>And then the wolves came.</q>',[29,37]);
-		new Game.Achievement('Zealous architect',loc("Have at least <b>%1 of everything</b>.",1500)+'<q>You need therapy.</q>',[31,36]);
+		new Game.Achievement('Zealous architect',loc("Have at least <b>%1 of everything</b>.",1500)+'<q>You need therapy.</q>',[31,36]);Game.last.pool='shadow';
 		
 		//end of achievements
 		
