@@ -16589,6 +16589,9 @@ Game.Launch=function()
 				if (minAmount>=600) {Game.Win('Sexcentennial');Game.Unlock('Butter biscuit (with butter)');}
 				if (minAmount>=650) {Game.Win('Sexcentennial and a half');Game.Unlock('Everybutter biscuit');}
 				if (minAmount>=700) {Game.Win('Septcentennial');Game.Unlock('Personal biscuit');}
+				if (minAmount>=750) {Game.Win('Septcentennial and a half');Game.Unlock('Plain biscuit');}
+				if (minAmount>=700) {Game.Win('Octcentennial');Game.Unlock('Prismatic biscuit');}
+				if (minAmount>=1500) {Game.Win('Zealous architect');}
 				
 				if (Game.handmadeCookies>=1000) {Game.Win('Clicktastic');Game.Unlock('Plastic mouse');}
 				if (Game.handmadeCookies>=100000) {Game.Win('Clickathlon');Game.Unlock('Iron mouse');}
