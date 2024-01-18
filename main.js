@@ -4281,7 +4281,7 @@ Game.Launch=function()
 			var toPop=[];
 			for (var i in Game.PrestigeUpgrades)
 			{
-				var me=Game.PrestigeUpgrades[i];
+				var me = Game.PrestigeUpgrades[i];
 				var prevCanBePurchased=me.canBePurchased;
 				me.canBePurchased=1;
 				if (!me.bought && !Game.DebuggingPrestige)
