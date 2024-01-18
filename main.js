@@ -4285,7 +4285,7 @@ Game.Launch=function()
 				Game.PrestigeUpgrades[i].canBePurchased=1;
 				if (!Game.PrestigeUpgrades[i].bought && !Game.DebuggingPrestige)
 				{
-					if (Game.PrestigeUpgrades[i].showIf && !Game.PrestigeUpgrades[i].showIf()) me.canBePurchased=0;
+					if (Game.PrestigeUpgrades[i].showIf && !Game.PrestigeUpgrades[i].showIf()) Game.PrestigeUpgrades[i].canBePurchased=0;
 					else
 					{
 						for (var ii in Game.PrestigeUpgrades[i].parents)
@@ -4294,7 +4294,7 @@ Game.Launch=function()
 						}
 					}
 				}
-				if (justBought && Game.PrestigeUpgrades[i].parents.indexOf(justBought)!=-1 && !prevCanBePurchased && Game.PrestigeUpgrades[i].canBePurchased && !Game.PrestigeUpgrades[i].bought) toPop.push(me);
+				if (justBought && Game.PrestigeUpgrades[i].parents.indexOf(justBought)!=-1 && !prevCanBePurchased && Game.PrestigeUpgrades[i].canBePurchased && !Game.PrestigeUpgrades[i].bought) toPop.push(Game.PrestigeUpgrades[i]);
 			}
 			toPop.sort(function(parent){return function(a,b){
 				var rot=Math.atan2(a.posY-parent.posY,parent.posX-a.posX)-Math.PI/2;
