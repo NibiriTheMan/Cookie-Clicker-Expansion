@@ -4281,7 +4281,6 @@ Game.Launch=function()
 			var toPop=[];
 			for (var i in Game.PrestigeUpgrades)
 			{
-				var me = Game.PrestigeUpgrades[i];
 				var prevCanBePurchased=me.canBePurchased;
 				me.canBePurchased=1;
 				if (!me.bought && !Game.DebuggingPrestige)
@@ -4291,7 +4290,7 @@ Game.Launch=function()
 					{
 						for (var ii in me.parents)
 						{
-							if (me.parents[ii]!=-1 && !me.parents[ii].bought) me.canBePurchased=0;
+							if (Game.PrestigeUpgrades[i].parents[ii]!=-1 && !Game.PrestigeUpgrades[i].parents[ii].bought) Game.PrestigeUpgrades[i].canBePurchased=0;
 						}
 					}
 				}
