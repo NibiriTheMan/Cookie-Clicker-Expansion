@@ -4308,47 +4308,45 @@ Game.Launch=function()
 			str+='<div class="crate upgrade heavenly enabled" style="position:absolute;left:-30px;top:-30px;opacity:0.8;pointer-events:none;transform:scale(1.3);background:transparent;"></div>';
 			str+='<div class="crateBox" style="filter:none;-webkit-filter:none;">';//chrome is still bad at these
 			for (var i in Game.PrestigeUpgrades)
-			{
-				var me=Game.PrestigeUpgrades[i];
-				
+			{	
 				var ghosted=0;
 				if (me.canBePurchased || Game.Has('Neuromancy'))
 				{
-					str+=Game.crate(me,'ascend','Game.PurchaseHeavenlyUpgrade('+me.id+');','heavenlyUpgrade'+me.id,toPop.indexOf(me)!=-1?('animation:pucker 0.2s ease-out;animation-delay:'+(toPop.indexOf(me)*0.1+0.2)+'s;'):'');
+					str+=Game.crate(Game.PrestigeUpgrades[i],'ascend','Game.PurchaseHeavenlyUpgrade('+Game.PrestigeUpgrades[i].id+');','heavenlyUpgrade'+Game.PrestigeUpgrades[i].id,toPop.indexOf(Game.PrestigeUpgrades[i])!=-1?('animation:pucker 0.2s ease-out;animation-delay:'+(toPop.indexOf(Game.PrestigeUpgrades[i])*0.1+0.2)+'s;'):'');
 				}
 				else
 				{
-					for (var ii in me.parents)
+					for (var ii in Game.PrestigeUpgrades[i].parents)
 					{
-						if (me.parents[ii]!=-1 && me.parents[ii].canBePurchased) ghosted=1;
+						if (Game.PrestigeUpgrades[i].parents[ii]!=-1 && Game.PrestigeUpgrades[i].parents[ii].canBePurchased) ghosted=1;
 					}
-					if (me.showIf && !me.showIf()) ghosted=0;
+					if (Game.PrestigeUpgrades[i].showIf && !Game.PrestigeUpgrades[i].showIf()) ghosted=0;
 					if (ghosted)
 					{
 						//maybe replace this with Game.crate()
 						str+='<div class="crate upgrade heavenly ghosted" id="heavenlyUpgrade'+me.id+'" style="position:absolute;left:'+me.posX+'px;top:'+me.posY+'px;'+writeIcon(me.icon)+'"></div>';
 					}
 				}
-				if (me.canBePurchased || Game.Has('Neuromancy') || ghosted)
+				if (Game.PrestigeUpgrades[i].canBePurchased || Game.Has('Neuromancy') || ghosted)
 				{
-					if (me.posX<Game.heavenlyBounds.left) Game.heavenlyBounds.left=me.posX;
-					if (me.posX>Game.heavenlyBounds.right) Game.heavenlyBounds.right=me.posX;
-					if (me.posY<Game.heavenlyBounds.top) Game.heavenlyBounds.top=me.posY;
-					if (me.posY>Game.heavenlyBounds.bottom) Game.heavenlyBounds.bottom=me.posY;
+					if (Game.PrestigeUpgrades[i].posX<Game.heavenlyBounds.left) Game.heavenlyBounds.left=Game.PrestigeUpgrades[i].posX;
+					if (Game.PrestigeUpgrades[i].posX>Game.heavenlyBounds.right) Game.heavenlyBounds.right=Game.PrestigeUpgrades[i].posX;
+					if (Game.PrestigeUpgrades[i].posY<Game.heavenlyBounds.top) Game.heavenlyBounds.top=Game.PrestigeUpgrades[i].posY;
+					if (Game.PrestigeUpgrades[i].posY>Game.heavenlyBounds.bottom) Game.heavenlyBounds.bottom=Game.PrestigeUpgrades[i].posY;
 				}
-				for (var ii in me.parents)//create pulsing links
+				for (var ii in Game.PrestigeUpgrades[i].parents)//create pulsing links
 				{
-					if (me.parents[ii]!=-1 && (me.canBePurchased || ghosted))
+					if (Game.PrestigeUpgrades[i].parents[ii]!=-1 && (Game.PrestigeUpgrades[i].canBePurchased || ghosted))
 					{
 						var origX=0;
 						var origY=0;
-						var targX=me.posX+28;
-						var targY=me.posY+28;
-						if (me.parents[ii]!=-1) {origX=me.parents[ii].posX+28;origY=me.parents[ii].posY+28;}
+						var targX=Game.PrestigeUpgrades[i].posX+28;
+						var targY=Game.PrestigeUpgrades[i].posY+28;
+						if (Game.PrestigeUpgrades[i].parents[ii]!=-1) {origX=Game.PrestigeUpgrades[i].parents[ii].posX+28;origY=Game.PrestigeUpgrades[i].parents[ii].posY+28;}
 						var rot=-(Math.atan((targY-origY)/(origX-targX))/Math.PI)*180;
 						if (targX<=origX) rot+=180;
 						var dist=Math.floor(Math.sqrt((targX-origX)*(targX-origX)+(targY-origY)*(targY-origY)));
-						str+='<div class="parentLink" id="heavenlyLink'+me.id+'-'+ii+'" style="'+(ghosted?'opacity:0.1;':'')+'width:'+dist+'px;-webkit-transform:rotate('+rot+'deg);-moz-transform:rotate('+rot+'deg);-ms-transform:rotate('+rot+'deg);-o-transform:rotate('+rot+'deg);transform:rotate('+rot+'deg);left:'+(origX)+'px;top:'+(origY)+'px;"></div>';
+						str+='<div class="parentLink" id="heavenlyLink'+Game.PrestigeUpgrades[i].id+'-'+ii+'" style="'+(ghosted?'opacity:0.1;':'')+'width:'+dist+'px;-webkit-transform:rotate('+rot+'deg);-moz-transform:rotate('+rot+'deg);-ms-transform:rotate('+rot+'deg);-o-transform:rotate('+rot+'deg);transform:rotate('+rot+'deg);left:'+(origX)+'px;top:'+(origY)+'px;"></div>';
 					}
 				}
 			}
