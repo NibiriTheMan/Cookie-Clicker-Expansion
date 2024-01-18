@@ -4281,20 +4281,20 @@ Game.Launch=function()
 			var toPop=[];
 			for (var i in Game.PrestigeUpgrades)
 			{
-				var prevCanBePurchased=me.canBePurchased;
-				me.canBePurchased=1;
-				if (!me.bought && !Game.DebuggingPrestige)
+				var prevCanBePurchased=Game.PrestigeUpgrades[i].canBePurchased;
+				Game.PrestigeUpgrades[i].canBePurchased=1;
+				if (!Game.PrestigeUpgrades[i].bought && !Game.DebuggingPrestige)
 				{
-					if (me.showIf && !me.showIf()) me.canBePurchased=0;
+					if (Game.PrestigeUpgrades[i].showIf && !Game.PrestigeUpgrades[i].showIf()) me.canBePurchased=0;
 					else
 					{
-						for (var ii in me.parents)
+						for (var ii in Game.PrestigeUpgrades[i].parents)
 						{
 							if (Game.PrestigeUpgrades[i].parents[ii]!=-1 && !Game.PrestigeUpgrades[i].parents[ii].bought) Game.PrestigeUpgrades[i].canBePurchased=0;
 						}
 					}
 				}
-				if (justBought && me.parents.indexOf(justBought)!=-1 && !prevCanBePurchased && me.canBePurchased && !me.bought) toPop.push(me);
+				if (justBought && Game.PrestigeUpgrades[i].parents.indexOf(justBought)!=-1 && !prevCanBePurchased && Game.PrestigeUpgrades[i].canBePurchased && !Game.PrestigeUpgrades[i].bought) toPop.push(me);
 			}
 			toPop.sort(function(parent){return function(a,b){
 				var rot=Math.atan2(a.posY-parent.posY,parent.posX-a.posX)-Math.PI/2;
