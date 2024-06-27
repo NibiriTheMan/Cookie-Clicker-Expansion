@@ -15305,7 +15305,7 @@ Game.Launch=function()
 			{name:'Blackcurrant milk',icon:[23,24],type:0,pic:'milkBlackcurrant'},
 			{name:'Peach milk',icon:[24,24],type:0,pic:'milkPeach'},
 			{name:'Hazelnut milk',icon:[25,24],type:0,pic:'milkHazelnut'},
-			{name:'Cotton candy milk',icon:[25,24],type:0,pic:'milkCottonCandy'},
+			{name:'Cotton candy milk',icon:[26,24],type:0,pic:'milkCottonCandy'},
 		];
 		
 		Game.Milks=[];
