@@ -13879,7 +13879,7 @@ Game.Launch=function()
 		order=2300;Game.TieredAchievement('console.log(Game.cookies)','','Javascript console',16);
 		order=2400;Game.TieredAchievement('You are alone in this idleverse','','Idleverse',16);
 		order=2500;Game.TieredAchievement('You know, I\'ve been thinking','','Cortex baker',16);
-		order=2600;Game.TieredAchievement('Lotsa me','','You',16);
+		order=2600;Game.TieredAchievement('All you\'ll ever need is yourself','','You',16);
 
 		order=7002;
 		new Game.Achievement('Septcentennial and a half',loc("Have at least <b>%1 of everything</b>.",750)+'<q>How did you even get here?</q>',[30,36]);
